@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:tx="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/task
+        http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+    <mvc:annotation-driven/>
+    <!--<context:annotation-config/>-->
+
+    <!--&lt;!&ndash; 支持aop注解 &ndash;&gt;-->
+    <!--<aop:aspectj-autoproxy />-->
+
+
+    <mvc:default-servlet-handler />
+
+    <!--spring mvc静态资源指定：-->
+    <!-- 方案二：通过spring3.0.4以后提供的mvc:resources 处理-->
+    <!--<mvc:resources mapping="/static/**" location="/static/"></mvc:resources>-->
+    <!-- 方案三：静态资源的访问由HandlerMapping转到 org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler 处理并返回. -->
+    <!-- 静态资源servlet配置 -->
+    <!--<mvc:default-servlet-handler/>-->
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <!--<property name="contentType" value="text/html"/>-->
+        <property name="prefix" value="/static"/>
+        <property name="suffix" value=".html"/>
+        <!--<property name="order" value="1"></property>-->
+    </bean>
+
+    <!-- 开启spring注解驱动-->
+    <!--<mvc:annotation-driven/>-->
+
+    <context:component-scan base-package="com.nm.web.controller,com.nm.service.ser.impl,com.nm.orm.dao.impl"/>
+
+    <import resource="classpath:datasource.xml"/>
+
+    <!-- 读取配置文件 -->
+    <context:property-placeholder location="classpath:log4j.properties,classpath:jdbc.properties" ignore-unresolvable="true"/>
+
+</beans>

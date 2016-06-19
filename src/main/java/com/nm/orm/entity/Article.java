@@ -1,0 +1,161 @@
+package com.nm.orm.entity;
+
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+import java.sql.Timestamp;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Set;
+
+/**
+ * Created by hewu on 2016/6/17 0017.
+ */
+@Entity
+@Table(name = "article")
+public class Article {
+    @Id
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid",strategy = "uuid2")
+    private String id;
+    private String title;
+    private String content;
+    private String itemId;
+
+    private Integer support;
+    private Integer hate;
+    private Integer see;
+    private Date createDate;
+    private Date modifyDate;
+    private Integer status;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "authorId")
+    private Account account;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
+    }
+
+    public Integer getSupport() {
+        return support;
+    }
+
+    public void setSupport(Integer support) {
+        this.support = support;
+    }
+
+    public Integer getHate() {
+        return hate;
+    }
+
+    public void setHate(Integer hate) {
+        this.hate = hate;
+    }
+
+    public Integer getSee() {
+        return see;
+    }
+
+    public void setSee(Integer see) {
+        this.see = see;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Date getModifyDate() {
+        return modifyDate;
+    }
+
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Article article = (Article) o;
+
+        if (id != null ? !id.equals(article.id) : article.id != null) return false;
+        if (title != null ? !title.equals(article.title) : article.title != null) return false;
+        if (!Arrays.equals(content.getBytes(), article.content.getBytes())) return false;
+        if (itemId != null ? !itemId.equals(article.itemId) : article.itemId != null) return false;
+        if (account != null ? !account.equals(article.account) : article.account != null) return false;
+        if (support != null ? !support.equals(article.support) : article.support != null) return false;
+        if (hate != null ? !hate.equals(article.hate) : article.hate != null) return false;
+        if (see != null ? !see.equals(article.see) : article.see != null) return false;
+        if (createDate != null ? !createDate.equals(article.createDate) : article.createDate != null) return false;
+        if (modifyDate != null ? !modifyDate.equals(article.modifyDate) : article.modifyDate != null) return false;
+        if (status != null ? !status.equals(article.status) : article.status != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + account.hashCode();
+        result = 31 * result + (itemId != null ? itemId.hashCode() : 0);
+        result = 31 * result + (account != null ? account.hashCode() : 0);
+        result = 31 * result + (support != null ? support.hashCode() : 0);
+        result = 31 * result + (hate != null ? hate.hashCode() : 0);
+        result = 31 * result + (see != null ? see.hashCode() : 0);
+        result = 31 * result + (createDate != null ? createDate.hashCode() : 0);
+        result = 31 * result + (modifyDate != null ? modifyDate.hashCode() : 0);
+        result = 31 * result + (status != null ? status.hashCode() : 0);
+        return result;
+    }
+}
