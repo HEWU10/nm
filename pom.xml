@@ -10,6 +10,13 @@
     <properties>
         <org.springframework.version>4.2.0.RELEASE</org.springframework.version>
         <org.hibernate.version>4.3.5.Final</org.hibernate.version>
+        <com.fasterxml.jackson.core.version>2.5.3</com.fasterxml.jackson.core.version>
+        <org.slf4j.version>1.7.12</org.slf4j.version>
+        <org.junit.version>4.11</org.junit.version>
+        <mysql.version>5.1.31</mysql.version>
+        <org.commons-logging.version>1.1</org.commons-logging.version>
+        <javassist.version>3.12.1.GA</javassist.version>
+        <org.aspectj>1.7.1</org.aspectj>
     </properties>
 
     <dependencies>
@@ -64,12 +71,6 @@
         <!-- http://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${org.springframework.version}</version>
-        </dependency>
-        <!-- http://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-        <dependency>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
             <version>${org.springframework.version}</version>
         </dependency>
@@ -77,6 +78,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
             <version>${org.springframework.version}</version>
         </dependency>
         <!-- http://mvnrepository.com/artifact/org.springframework/spring-expression -->
@@ -100,19 +106,7 @@
             <artifactId>hibernate-core</artifactId>
             <version>${org.hibernate.version}</version>
         </dependency>
-        <!-- http://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-c3p0</artifactId>-->
-            <!--<version>${org.hibernate.version}</version>-->
-        <!--</dependency>-->
-        <!-- http://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-validator</artifactId>-->
-            <!--<version>${org.hibernate.version}</version>-->
-        <!--</dependency>-->
-        <!-- http://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
@@ -122,13 +116,13 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.5.3</version>
+            <version>${com.fasterxml.jackson.core.version}</version>
         </dependency>
 
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
-            <version>1.1</version>
+            <version>${org.commons-logging.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>javax.servlet</groupId>
@@ -154,27 +148,40 @@
             <version>1.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${org.aspectj}</version>
+        </dependency>
+
+        <!-- 读取字节码包 -->
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
+        </dependency>
+
         <!-- http://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.12</version>
+            <version>${org.slf4j.version}</version>
         </dependency>
 
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>${org.junit.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.31</version>
+            <version>${mysql.version}</version>
+            <scope>runtime</scope>
         </dependency>
-
 
     </dependencies>
     <build>
@@ -191,6 +198,7 @@
                             <targetPath>WEB-INF/classes</targetPath>
                             <includes>
                                 <include>systemConfig.properties</include>
+                                <include>jdbc.properties</include>
                                 <include>applicationContext.xml</include>
                                 <include>datasource.xml</include>
                             </includes>
@@ -209,6 +217,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>

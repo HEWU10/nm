@@ -2,7 +2,6 @@ package com.nm.service.ser;
 
 import com.nm.orm.dao.BaseDao;
 import com.nm.orm.entity.Article;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 功能说明：TODO

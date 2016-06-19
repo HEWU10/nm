@@ -11,5 +11,4 @@ import com.nm.orm.entity.Article;
  */
 public interface ArticleDao extends BaseDao<Article,String>{
 
-
 }

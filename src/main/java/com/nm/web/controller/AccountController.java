@@ -16,13 +16,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.lang.annotation.Annotation;
+
 /**
  * 功能说明：TODO
  * @return <br/>
  *         修改历史：<br/>
  *         1.[2016年05月27日上午10:45] 创建方法 by hw
  */
-@Controller
+@RestController
 @RequestMapping(path = "/account")
 public class AccountController extends BaseController {
 
@@ -32,8 +34,13 @@ public class AccountController extends BaseController {
     private AccountService accountService;
 
     @RequestMapping("/hello")
-    private ResponseEntity<Result> hello(@RequestBody Account account, HttpServletRequest request) {
+    private ResponseEntity<Result> hello( HttpServletRequest request) {
         System.out.println(accountService);
-        return getResult(null);
+        Account account  = new Account();
+        account.setAddress("张三");
+        accountService.saveOrUpdate(account);
+        return getResult("");
     }
+
+
 }

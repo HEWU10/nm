@@ -1,43 +1,47 @@
 package com.nm.orm.dao.impl;
 
-import java.io.Serializable;
-import java.util.Collection;
-
 import com.nm.orm.common.DaoConstants;
+import com.nm.orm.dao.BaseDao;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.nm.orm.dao.BaseDao;
-import org.springframework.beans.factory.annotation.Qualifier;
+import java.io.Serializable;
+import java.util.Collection;
 
 /**
  * 功能说明：TODO
+ *
  * @return <br/>
- *         修改历史：<br/>
- *         1.[2016年05月26日上午17:38] 创建方法 by hw
+ * 修改历史：<br/>
+ * 1.[2016年05月26日上午17:38] 创建方法 by hw
  */
 public abstract class BaseDaoImpl<T, U extends Serializable>
         implements BaseDao<T, U> {
 
+    @Autowired
     protected SessionFactory sessionFactory;
 
     Class<T> entityClass;
 
     String tableName;
 
-    // public BaseDaoImpl(Class<T> entityClass) {
-    // this.entityClass = entityClass;
-    // this.tableName = entityClass.getSimpleName();
-    // }
+//    public BaseDaoImpl(Class<T> entityClass) {
+//        this.entityClass = entityClass;
+//        this.tableName = entityClass.getSimpleName();
+//    }
 
     public U insert(T o) {
         return (U) this.getCurrentSession().save(o);
     }
 
     public void saveOrUpdate(T o) {
-        this.getCurrentSession().saveOrUpdate(o);
+        try {
+            this.getCurrentSession().saveOrUpdate(o);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void insert(Collection<T> objs) {

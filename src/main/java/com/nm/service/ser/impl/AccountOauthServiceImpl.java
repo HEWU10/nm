@@ -2,12 +2,12 @@ package com.nm.service.ser.impl;
 
 import java.util.Collection;
 
+import com.nm.orm.entity.AccountOauth;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.nm.orm.dao.AccountOauthDao;
-import com.nm.orm.entity.AccountOauth;
 import com.nm.service.ser.AccountOauthService;
 
 /**

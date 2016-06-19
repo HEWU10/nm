@@ -1,10 +1,13 @@
 package com.nm.orm.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Date;
+import java.util.Set;
 
 /**
  * 功能说明：TODO
@@ -14,24 +17,34 @@ import java.sql.Timestamp;
  * 1.[2016年06月17日上午21:09] 创建方法 by hw
  */
 @Entity
+@Table(name = "account")
 public class Account {
+    @Id
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid" ,strategy = "uuid2")
     private String id;
+
     private Integer type;
     private String name;
     private String password;
-    private Integer mobile;
+    private String mobile;
     private String email;
     private String address;
-    private Timestamp createDate;
-    private Timestamp modifyDate;
-    private Timestamp birthDay;
+    @UpdateTimestamp
+    private Date createDate;
+    @CreationTimestamp
+    private Date modifyDate;
+    private Date birthDay;
     private String icon;
     private Integer vip;
     private Integer level;
     private Integer status;
 
-    @Id
-    @Column(name = "id")
+    @OneToOne(fetch = FetchType.EAGER,cascade ={CascadeType.ALL} )
+    @JoinColumn(name = "accountOauthId")
+    private AccountOauth accountOauth;
+
+
     public String getId() {
         return id;
     }
@@ -40,8 +53,7 @@ public class Account {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "type")
+
     public Integer getType() {
         return type;
     }
@@ -50,8 +62,6 @@ public class Account {
         this.type = type;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -60,8 +70,6 @@ public class Account {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "password")
     public String getPassword() {
         return password;
     }
@@ -70,18 +78,14 @@ public class Account {
         this.password = password;
     }
 
-    @Basic
-    @Column(name = "mobile")
-    public Integer getMobile() {
+    public String getMobile() {
         return mobile;
     }
 
-    public void setMobile(Integer mobile) {
+    public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 
-    @Basic
-    @Column(name = "email")
     public String getEmail() {
         return email;
     }
@@ -91,7 +95,6 @@ public class Account {
     }
 
     @Basic
-    @Column(name = "address")
     public String getAddress() {
         return address;
     }
@@ -100,38 +103,30 @@ public class Account {
         this.address = address;
     }
 
-    @Basic
-    @Column(name = "createDate")
-    public Timestamp getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Timestamp createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
-    @Basic
-    @Column(name = "modifyDate")
-    public Timestamp getModifyDate() {
+    public Date getModifyDate() {
         return modifyDate;
     }
 
-    public void setModifyDate(Timestamp modifyDate) {
+    public void setModifyDate(Date modifyDate) {
         this.modifyDate = modifyDate;
     }
 
-    @Basic
-    @Column(name = "birthDay")
-    public Timestamp getBirthDay() {
+    public Date getBirthDay() {
         return birthDay;
     }
 
-    public void setBirthDay(Timestamp birthDay) {
+    public void setBirthDay(Date birthDay) {
         this.birthDay = birthDay;
     }
 
-    @Basic
-    @Column(name = "icon")
     public String getIcon() {
         return icon;
     }
@@ -140,8 +135,6 @@ public class Account {
         this.icon = icon;
     }
 
-    @Basic
-    @Column(name = "vip")
     public Integer getVip() {
         return vip;
     }
@@ -150,8 +143,6 @@ public class Account {
         this.vip = vip;
     }
 
-    @Basic
-    @Column(name = "level")
     public Integer getLevel() {
         return level;
     }
@@ -160,8 +151,6 @@ public class Account {
         this.level = level;
     }
 
-    @Basic
-    @Column(name = "status")
     public Integer getStatus() {
         return status;
     }
@@ -212,5 +201,15 @@ public class Account {
         result = 31 * result + (level != null ? level.hashCode() : 0);
         result = 31 * result + (status != null ? status.hashCode() : 0);
         return result;
+    }
+
+
+    public AccountOauth getAccountOauth() {
+        return accountOauth;
+    }
+
+
+    public void setAccountOauth(AccountOauth accountOauth) {
+        this.accountOauth = accountOauth;
     }
 }

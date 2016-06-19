@@ -12,17 +12,17 @@ import java.util.List;
  */
 public interface BaseService<T,U extends Serializable> {
 
-        U insert(T obj);
+        U insert(T t);
 
-        void insert(List<T> obj);
+        void insert(List<T> tes);
 
-        void saveOrUpdate(T obj);
+        void saveOrUpdate(T t);
 
-        void update(T obj);
+        void update(T t);
 
         T getById(U id);
 
-        void delete(T obj);
+        void delete(T t);
 
         int deleteAll(T t);
 

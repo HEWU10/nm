@@ -1,7 +1,6 @@
 package com.nm.service.ser;
 
 import com.nm.orm.dao.BaseDao;
-import com.nm.orm.dao.impl.BaseDaoImpl;
 import com.nm.orm.entity.AccountOauth;
 
 /**

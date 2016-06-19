@@ -1,7 +1,6 @@
 package com.nm.orm.dao.impl;
 
 import com.nm.orm.dao.ArticleDao;
-import com.nm.orm.dao.BaseDao;
 import com.nm.orm.entity.Article;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;

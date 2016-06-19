@@ -8,9 +8,6 @@ import org.springframework.stereotype.Repository;
 /**
  * 功能说明：TODO
  *
- * @return <br/>
- * 修改历史：<br/>
- * 1.[2016年06月06日上午15:51] 创建方法 by hw
  */
 @Repository
 @Qualifier("accountDao")

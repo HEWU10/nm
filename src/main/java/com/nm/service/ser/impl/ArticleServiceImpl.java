@@ -23,8 +23,8 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ArticleDao articleDao;
 
-    public String insert(Article article) {
-        return this.articleDao.insert(article);
+    public String insert(Article obj) {
+        return this.articleDao.insert(obj);
     }
 
     public void saveOrUpdate(Article article) {
@@ -50,4 +50,6 @@ public class ArticleServiceImpl implements ArticleService {
     public int deleteById(String id) {
         return this.articleDao.deleteById(id);
     }
+
+
 }
