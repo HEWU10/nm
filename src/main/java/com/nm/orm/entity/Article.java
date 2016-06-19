@@ -1,6 +1,8 @@
 package com.nm.orm.entity;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -14,9 +16,10 @@ import java.util.Set;
 @Entity
 @Table(name = "article")
 public class Article {
+
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid",strategy = "uuid2")
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
     private String title;
     private String content;
@@ -25,7 +28,9 @@ public class Article {
     private Integer support;
     private Integer hate;
     private Integer see;
+    @CreationTimestamp
     private Date createDate;
+    @UpdateTimestamp
     private Date modifyDate;
     private Integer status;
 

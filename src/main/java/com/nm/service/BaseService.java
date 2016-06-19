@@ -1,4 +1,4 @@
-package com.nm.service.ser;
+package com.nm.service;
 
 import java.io.Serializable;
 import java.util.List;

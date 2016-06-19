@@ -1,14 +1,15 @@
-package com.nm.service.ser.impl;
+package com.nm.service.impl;
 
 import java.util.Collection;
+import java.util.List;
 
 import com.nm.orm.entity.AccountOauth;
+import com.nm.service.AccountOauthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.nm.orm.dao.AccountOauthDao;
-import com.nm.service.ser.AccountOauthService;
 
 /**
  * 功能说明：TODO
@@ -36,10 +37,6 @@ public class AccountOauthServiceImpl implements AccountOauthService {
         this.accountOauthDao.insert(accounts);
     }
 
-    public AccountOauth findById(String id) {
-        return this.accountOauthDao.findById(id);
-    }
-
     public void delete(AccountOauth account) {
         this.accountOauthDao.delete(account);
     }
@@ -50,5 +47,17 @@ public class AccountOauthServiceImpl implements AccountOauthService {
 
     public int deleteById(String id) {
         return this.accountOauthDao.deleteById(id);
+    }
+
+    public void insert(List<AccountOauth> tes) {
+        this.accountOauthDao.insert(tes);
+    }
+
+    public void update(AccountOauth accountOauth) {
+        this.accountOauthDao.saveOrUpdate(accountOauth);
+    }
+
+    public AccountOauth getById(String id) {
+        return this.accountOauthDao.findById(id);
     }
 }

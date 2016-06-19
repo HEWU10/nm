@@ -1,7 +1,6 @@
-package com.nm.service.ser;
+package com.nm.service;
 
 import com.nm.orm.entity.Score;
-import com.nm.util.StringUtil;
 
 /**
  * Created by hewu on 2016/6/19 0019.

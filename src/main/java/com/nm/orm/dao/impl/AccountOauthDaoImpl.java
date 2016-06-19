@@ -17,7 +17,7 @@ import org.springframework.stereotype.Repository;
 public class AccountOauthDaoImpl extends BaseDaoImpl<AccountOauth,String> implements AccountOauthDao {
 
     public AccountOauthDaoImpl() {
-        setEntityClass(AccountOauth.class);
+        super(AccountOauth.class);
     }
 
 

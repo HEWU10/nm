@@ -1,4 +1,4 @@
-package com.nm.service.ser;
+package com.nm.service;
 
 import com.nm.orm.entity.Tag;
 

@@ -11,4 +11,5 @@ import com.nm.orm.entity.Account;
  */
 public interface AccountDao extends BaseDao<Account, String> {
 
+
 }

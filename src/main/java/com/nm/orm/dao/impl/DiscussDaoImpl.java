@@ -11,8 +11,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Qualifier("discussDao")
 public class DiscussDaoImpl extends BaseDaoImpl<Discuss, String> implements DiscussDao {
-    private DiscussDaoImpl(){
-        setEntityClass(Discuss.class);
+    public DiscussDaoImpl(){
+        super(Discuss.class);
     }
 
 }

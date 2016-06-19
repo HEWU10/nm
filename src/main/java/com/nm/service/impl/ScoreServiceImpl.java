@@ -1,8 +1,8 @@
-package com.nm.service.ser.impl;
+package com.nm.service.impl;
 
 import com.nm.orm.dao.ScoreDao;
 import com.nm.orm.entity.Score;
-import com.nm.service.ser.ScoreService;
+import com.nm.service.ScoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

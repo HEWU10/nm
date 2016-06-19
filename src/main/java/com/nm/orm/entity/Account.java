@@ -20,8 +20,8 @@ import java.util.Set;
 @Table(name = "account")
 public class Account {
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid" ,strategy = "uuid2")
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
 
     private Integer type;
@@ -30,9 +30,9 @@ public class Account {
     private String mobile;
     private String email;
     private String address;
-    @UpdateTimestamp
-    private Date createDate;
     @CreationTimestamp
+    private Date createDate;
+    @UpdateTimestamp
     private Date modifyDate;
     private Date birthDay;
     private String icon;

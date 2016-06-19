@@ -13,8 +13,8 @@ import java.sql.Timestamp;
 @Table(name = "accountintegral")
 public class Accountintegral {
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name="uuid" ,strategy = "uuid2")
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
 
     private Date occurDate;

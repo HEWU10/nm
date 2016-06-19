@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 public class AccountDaoImpl extends BaseDaoImpl<Account,String> implements AccountDao {
 
     public AccountDaoImpl() {
-        setEntityClass(Account.class);
+        super(Account.class);
     }
 
 

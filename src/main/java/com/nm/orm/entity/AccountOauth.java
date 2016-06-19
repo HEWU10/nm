@@ -10,12 +10,12 @@ import javax.persistence.*;
 @Entity
 @Table(name = "accountOauth")
 public class AccountOauth {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
     private String authId;
 
-    @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid",strategy = "uuid2")
     public String getId() {
         return id;
     }

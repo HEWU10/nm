@@ -1,8 +1,8 @@
-package com.nm.service.ser.impl;
+package com.nm.service.impl;
 
 import com.nm.orm.dao.TagDao;
 import com.nm.orm.entity.Tag;
-import com.nm.service.ser.TagService;
+import com.nm.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ import java.util.List;
  */
 @Service
 @Qualifier("tagService")
-public class TagServiceImpl implements TagService{
+public class TagServiceImpl implements TagService {
 
     @Autowired
     private TagDao tagDao;

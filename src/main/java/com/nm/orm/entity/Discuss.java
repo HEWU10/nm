@@ -1,29 +1,35 @@
 package com.nm.orm.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Arrays;
+import java.util.Date;
 
 /**
  * Created by hewu on 2016/6/17 0017.
  */
 @Entity
+@Table(name = "discuss")
 public class Discuss {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
     private byte[] content;
     private String articleId;
     private Integer support;
     private Integer hate;
-    private Timestamp createDate;
-    private Timestamp modifyDate;
+    @CreationTimestamp
+    private Date createDate;
+    @UpdateTimestamp
+    private Date modifyDate;
     private Integer status;
     private Integer floor;
 
-    @Id
-    @Column(name = "id")
     public String getId() {
         return id;
     }
@@ -32,8 +38,6 @@ public class Discuss {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "content")
     public byte[] getContent() {
         return content;
     }
@@ -42,8 +46,6 @@ public class Discuss {
         this.content = content;
     }
 
-    @Basic
-    @Column(name = "articleId")
     public String getArticleId() {
         return articleId;
     }
@@ -52,8 +54,6 @@ public class Discuss {
         this.articleId = articleId;
     }
 
-    @Basic
-    @Column(name = "support")
     public Integer getSupport() {
         return support;
     }
@@ -62,8 +62,6 @@ public class Discuss {
         this.support = support;
     }
 
-    @Basic
-    @Column(name = "hate")
     public Integer getHate() {
         return hate;
     }
@@ -72,28 +70,22 @@ public class Discuss {
         this.hate = hate;
     }
 
-    @Basic
-    @Column(name = "createDate")
-    public Timestamp getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Timestamp createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
-    @Basic
-    @Column(name = "modifyDate")
-    public Timestamp getModifyDate() {
+    public Date getModifyDate() {
         return modifyDate;
     }
 
-    public void setModifyDate(Timestamp modifyDate) {
+    public void setModifyDate(Date modifyDate) {
         this.modifyDate = modifyDate;
     }
 
-    @Basic
-    @Column(name = "status")
     public Integer getStatus() {
         return status;
     }
@@ -102,8 +94,6 @@ public class Discuss {
         this.status = status;
     }
 
-    @Basic
-    @Column(name = "floor")
     public Integer getFloor() {
         return floor;
     }

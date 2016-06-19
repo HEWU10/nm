@@ -1,9 +1,8 @@
-package com.nm.service.ser.impl;
+package com.nm.service.impl;
 
 import com.nm.orm.dao.DiscussDao;
 import com.nm.orm.entity.Discuss;
-import com.nm.service.ser.BaseService;
-import com.nm.service.ser.DiscussService;
+import com.nm.service.DiscussService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -15,10 +14,9 @@ import java.util.List;
  */
 @Service
 @Qualifier("discussService")
-public class DiscussServiceImpl implements DiscussService{
+public class DiscussServiceImpl implements DiscussService {
     @Autowired
     private DiscussDao discussDao;
-
 
     public String insert(Discuss discuss) {
         return this.discussDao.insert(discuss);
@@ -49,6 +47,6 @@ public class DiscussServiceImpl implements DiscussService{
     }
 
     public int deleteById(String id) {
-        return this.deleteById(id);
+        return this.discussDao.deleteById(id);
     }
 }

@@ -1,13 +1,15 @@
-package com.nm.service.ser.impl;
+package com.nm.service.impl;
 
 import com.nm.orm.dao.AccountDao;
 import com.nm.orm.entity.Account;
-import com.nm.service.ser.AccountService;
+import com.nm.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * 功能说明：TODO
@@ -23,6 +25,7 @@ public class AccountServiceImpl implements AccountService {
     @Autowired
     private AccountDao accountDao;
 
+    @Transactional
     public String insert(Account account) {
         return accountDao.insert(account);
     }
@@ -35,10 +38,6 @@ public class AccountServiceImpl implements AccountService {
         this.accountDao.insert(accounts);
     }
 
-    public Account findById(String accountId) {
-        return this.accountDao.findById(accountId);
-    }
-
     public void delete(Account account) {
         this.accountDao.delete(account);
     }
@@ -49,5 +48,17 @@ public class AccountServiceImpl implements AccountService {
 
     public int deleteById(String accountId) {
         return this.accountDao.deleteById(accountId);
+    }
+
+    public void insert(List<Account> tes) {
+        this.accountDao.insert(tes);
+    }
+
+    public void update(Account account) {
+        this.accountDao.saveOrUpdate(account);
+    }
+
+    public Account getById(String id) {
+        return this.accountDao.findById(id);
     }
 }

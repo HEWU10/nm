@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 @Qualifier("scoreDao")
 public class ScoreDaoImpl extends BaseDaoImpl<Score,String> implements ScoreDao {
 
-    private ScoreDaoImpl(){
-        setEntityClass(Score.class);
+    public ScoreDaoImpl(){
+        super(Score.class);
     }
 }

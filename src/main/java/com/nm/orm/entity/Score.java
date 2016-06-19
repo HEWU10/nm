@@ -1,17 +1,19 @@
 package com.nm.orm.entity;
 
 import org.hibernate.annotations.Generated;
+import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by hewu on 2016/6/17 0017.
  */
 @Entity
+@Table(name = "score")
 public class Score {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
     private String articleId;
     private String content;

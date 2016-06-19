@@ -1,8 +1,8 @@
-package com.nm.service.ser.impl;
+package com.nm.service.impl;
 
 import com.nm.orm.dao.ArticleDao;
 import com.nm.orm.entity.Article;
-import com.nm.service.ser.ArticleService;
+import com.nm.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

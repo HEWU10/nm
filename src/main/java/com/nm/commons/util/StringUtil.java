@@ -1,4 +1,4 @@
-package com.nm.util;
+package com.nm.commons.util;
 
 /**
  * Created by hewu on 2016/6/18 0018.

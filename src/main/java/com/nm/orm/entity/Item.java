@@ -1,26 +1,32 @@
 package com.nm.orm.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Created by hewu on 2016/6/17 0017.
  */
 @Entity
+@Table(name = "item")
 public class Item {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
     private String name;
     private Integer sort;
     private String parent;
-    private Timestamp createDate;
-    private Timestamp modifyDate;
+    @CreationTimestamp
+    private Date createDate;
+    @UpdateTimestamp
+    private Date modifyDate;
     private Integer status;
 
-    @Id
-    @Column(name = "id")
     public String getId() {
         return id;
     }
@@ -29,8 +35,6 @@ public class Item {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -39,8 +43,6 @@ public class Item {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "sort")
     public Integer getSort() {
         return sort;
     }
@@ -49,8 +51,6 @@ public class Item {
         this.sort = sort;
     }
 
-    @Basic
-    @Column(name = "parent")
     public String getParent() {
         return parent;
     }
@@ -59,28 +59,22 @@ public class Item {
         this.parent = parent;
     }
 
-    @Basic
-    @Column(name = "createDate")
-    public Timestamp getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Timestamp createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
-    @Basic
-    @Column(name = "modifyDate")
-    public Timestamp getModifyDate() {
+    public Date getModifyDate() {
         return modifyDate;
     }
 
-    public void setModifyDate(Timestamp modifyDate) {
+    public void setModifyDate(Date modifyDate) {
         this.modifyDate = modifyDate;
     }
 
-    @Basic
-    @Column(name = "status")
     public Integer getStatus() {
         return status;
     }

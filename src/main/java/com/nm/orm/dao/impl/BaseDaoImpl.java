@@ -19,6 +19,10 @@ import java.util.Collection;
  */
 public abstract class BaseDaoImpl<T, U extends Serializable>
         implements BaseDao<T, U> {
+    public BaseDaoImpl(Class classType){
+        this.entityClass = classType;
+        this.tableName = classType.getSimpleName();
+    }
 
     @Autowired
     protected SessionFactory sessionFactory;

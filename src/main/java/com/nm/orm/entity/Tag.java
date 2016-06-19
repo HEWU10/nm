@@ -1,24 +1,28 @@
 package com.nm.orm.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
+import org.hibernate.annotations.*;
+
+import javax.persistence.*;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.Table;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Created by hewu on 2016/6/17 0017.
  */
 @Entity
+@Table(name = "tag")
 public class Tag {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
     private String id;
     private String name;
     private String authorId;
-    private Timestamp createDate;
-    private Timestamp modifyDate;
+    private Date createDate;
+    private Date modifyDate;
 
-    @Id
-    @Column(name = "id")
     public String getId() {
         return id;
     }
@@ -27,8 +31,6 @@ public class Tag {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -37,8 +39,6 @@ public class Tag {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "authorId")
     public String getAuthorId() {
         return authorId;
     }
@@ -47,23 +47,19 @@ public class Tag {
         this.authorId = authorId;
     }
 
-    @Basic
-    @Column(name = "createDate")
-    public Timestamp getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Timestamp createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
-    @Basic
-    @Column(name = "modifyDate")
-    public Timestamp getModifyDate() {
+    public Date getModifyDate() {
         return modifyDate;
     }
 
-    public void setModifyDate(Timestamp modifyDate) {
+    public void setModifyDate(Date modifyDate) {
         this.modifyDate = modifyDate;
     }
 

@@ -16,8 +16,8 @@ import org.springframework.stereotype.Repository;
 @Qualifier("articleDao")
 public class ArticleDaoImpl extends BaseDaoImpl<Article,String> implements ArticleDao{
 
-    public ArticleDaoImpl() {
-        setEntityClass(Article.class);
+    private ArticleDaoImpl() {
+        super(Article.class);
     }
 
 

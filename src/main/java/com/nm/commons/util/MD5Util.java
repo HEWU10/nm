@@ -1,4 +1,4 @@
-package com.nm.util;
+package com.nm.commons.util;
 
 import java.security.MessageDigest;
 
