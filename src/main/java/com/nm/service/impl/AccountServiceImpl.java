@@ -26,6 +26,13 @@ public class AccountServiceImpl implements AccountService {
     private AccountDao accountDao;
 
     @Transactional
+    public List<Account> findAll() {
+        return this.accountDao.findAll();
+    }
+
+    //////////////////  BaseService interface   ////////////////////
+
+    @Transactional
     public String insert(Account account) {
         return accountDao.insert(account);
     }

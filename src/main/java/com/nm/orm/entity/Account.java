@@ -40,8 +40,8 @@ public class Account {
     private Integer level;
     private Integer status;
 
-    @OneToOne(fetch = FetchType.EAGER,cascade ={CascadeType.ALL} )
-    @JoinColumn(name = "accountOauthId")
+    @OneToOne(fetch = FetchType.EAGER, targetEntity = AccountOauth.class)
+    @JoinColumn(name = "accountOauthId",updatable = false)
     private AccountOauth accountOauth;
 
 

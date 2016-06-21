@@ -1,27 +1,31 @@
 package com.nm.orm.entity;
 
-import org.hibernate.annotations.*;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.sql.Timestamp;
 import java.util.Date;
 
-/**
- * Created by hewu on 2016/6/17 0017.
- */
 @Entity
 @Table(name = "tag")
 public class Tag {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
-    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate", strategy = "uuid")
     private String id;
     private String name;
-    private String authorId;
+    @ManyToOne(targetEntity = Account.class)
+    @JoinColumn(name = "accountId",updatable = false,nullable = false)
+    private Account account;
+    @CreationTimestamp
     private Date createDate;
+    @UpdateTimestamp
     private Date modifyDate;
+
+
+    ///////////////////////  get and set   //////////////////////////
 
     public String getId() {
         return id;
@@ -39,12 +43,12 @@ public class Tag {
         this.name = name;
     }
 
-    public String getAuthorId() {
-        return authorId;
+    public Account getAccount() {
+        return account;
     }
 
-    public void setAuthorId(String authorId) {
-        this.authorId = authorId;
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public Date getCreateDate() {
@@ -72,7 +76,7 @@ public class Tag {
 
         if (id != null ? !id.equals(tag.id) : tag.id != null) return false;
         if (name != null ? !name.equals(tag.name) : tag.name != null) return false;
-        if (authorId != null ? !authorId.equals(tag.authorId) : tag.authorId != null) return false;
+        if (account != null ? !account.equals(tag.account) : tag.account != null) return false;
         if (createDate != null ? !createDate.equals(tag.createDate) : tag.createDate != null) return false;
         if (modifyDate != null ? !modifyDate.equals(tag.modifyDate) : tag.modifyDate != null) return false;
 
@@ -83,7 +87,7 @@ public class Tag {
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (authorId != null ? authorId.hashCode() : 0);
+        result = 31 * result + (account != null ? account.hashCode() : 0);
         result = 31 * result + (createDate != null ? createDate.hashCode() : 0);
         result = 31 * result + (modifyDate != null ? modifyDate.hashCode() : 0);
         return result;

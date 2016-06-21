@@ -12,6 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * 功能说明：TODO
  * @return <br/>
@@ -27,10 +29,10 @@ public class AccountController extends BaseController {
     @Autowired
     private AccountService accountService;
 
-    @RequestMapping("/hello")
-    private ResponseEntity<Result> hello( HttpServletRequest request) {
-
-        return getResult("");
+    @RequestMapping("/findAll")
+    private ResponseEntity<Result> findAll( HttpServletRequest request) {
+        List<Account> accounts = this.accountService.findAll();
+        return getResult(accounts);
     }
 
 

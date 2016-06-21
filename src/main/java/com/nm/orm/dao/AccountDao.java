@@ -2,6 +2,8 @@ package com.nm.orm.dao;
 
 import com.nm.orm.entity.Account;
 
+import java.util.List;
+
 /**
  * 功能说明：TODO
  *
@@ -11,5 +13,6 @@ import com.nm.orm.entity.Account;
  */
 public interface AccountDao extends BaseDao<Account, String> {
 
+    List<Account> findAll();
 
 }

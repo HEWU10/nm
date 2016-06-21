@@ -3,9 +3,11 @@ package com.nm.service.impl;
 import com.nm.orm.dao.TagDao;
 import com.nm.orm.entity.Tag;
 import com.nm.service.TagService;
+import org.hibernate.Criteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,6 +21,12 @@ public class TagServiceImpl implements TagService {
     @Autowired
     private TagDao tagDao;
 
+    @Transactional
+    public List<Tag> findAll(String id) {
+        return this.tagDao.findAll(id);
+    }
+
+    //////////////////  BaseService interface   ////////////////////
     public String insert(Tag tag) {
         return this.tagDao.insert(tag);
     }

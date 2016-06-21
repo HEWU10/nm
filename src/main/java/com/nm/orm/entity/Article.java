@@ -34,8 +34,8 @@ public class Article {
     private Date modifyDate;
     private Integer status;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "authorId")
+    @ManyToOne(fetch = FetchType.EAGER,targetEntity = Account.class)
+    @JoinColumn(name = "accountId",nullable = false,updatable = false)
     private Account account;
 
     public String getId() {
