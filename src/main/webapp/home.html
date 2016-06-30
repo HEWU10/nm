@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+    <script data-main="static/main" src="static/lib/require.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<!--<div class="margin-center">-->
+    <!--<div class="nav navbar-static-top" style="align">-->
+       <!--<div class="container text-center">-->
+           <!--测试导航栏-->
+       <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+
+<header class="header-wrap" id="nav-scroll">
+    <div class="nav-wrap">
+        <div class="logo-title">
+            <a href="http://aikongke.com" alt="爱控客" title="爱控客">
+                爱控客				</a>
+        </div>
+        <!-- Toggle menu -->
+        <div class="toggle-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!-- /.Toggle menu -->
+        <!-- Search button -->
+        <div class="search-btn-click">
+            <i class="fa fa-search"></i>
+            <div class="header-search-slide">
+                <form method="get" id="searchform-slide" class="searchform" action="http://aikongke.com" role="search">
+                    <input type="search" class="field" name="s" value="" placeholder="Search" required="">
+                </form>
+            </div>
+        </div>
+        <!-- /.Search button -->
+        <!-- Login status -->
+        <div id="login-reg">
+            <span data-sign="0" id="user-login" class="user-login ie_pie only-login"> 登录</span>
+        </div>
+        <!-- /.Login status -->
+        <!-- Focus us -->
+        <div id="focus-us">
+            关注我们<div id="focus-slide" class="ie_pie">
+            <div class="focus-title">关注我们</div>
+            <p class="focus-content">
+                <a href="http://weibo.com/3753151687" target="_blank" class="sinaweibo"><span><i class="fa fa-weibo"></i>新浪微博</span></a>
+                <a href="http://t.qq.com/touchumind" target="_blank" class="sinaweibo"><span><i class="fa fa-tencent-weibo"></i>腾讯微博</span></a>
+            </p>
+            <div class="focus-title">联系我们</div>
+            <p class="focus-content" style="line-height: 20px;margin-bottom: 10px;">
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=645944229&amp;site=qq&amp;menu=yes" target="_blank" class="qq"><span><i class="fa fa-qq"></i>QQ</span></a>
+                <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=cBMYGR4RAxhCQEFAMAYZAF4BAV4THx0" target="_blank"><span><i class="fa fa-envelope"></i>发送邮件</span></a>
+                <!-- 可删除 -->
+                <!-- 删除截止 -->
+            </p>
+            <div class="focus-title">订阅本站<i class="fa fa-rss"></i></div>
+            <p class="focus-content">
+                <input type="text" name="rss" class="rss" value="http://aikongke.com/feed">
+            </p>
+            <p class="focus-content">订阅到： <a rel="external nofollow" target="_blank" href="http://xianguo.com/subscribe?url=http://aikongke.com/feed">鲜果</a>
+                <a rel="external nofollow" target="_blank" href="http://reader.youdao.com/b.do?keyfrom=bookmarklet&amp;url=http://aikongke.com/feed">有道</a>
+                <a rel="external nofollow" target="_blank" href="http://feedly.com/index.html#subscription%2Ffeed%2Fhttp://aikongke.com/feed">Feedly</a></p>
+            <form action="http://list.qq.com/cgi-bin/qf_compose_send" target="_blank" method="post">
+                <input type="hidden" name="t" value="qf_booked_feedback">
+                <input type="hidden" name="id" value="7e2395e0da222bfbe444d7246020db3f09d05f85db896a61">
+                <input type="email" name="to" id="to" class="focus-email" placeholder="输入邮箱,订阅本站" required="">
+                <input type="submit" class="focus-email-submit" value="订阅">
+            </form>
+
+        </div>
+        </div>			<!-- /.Focus us -->
+        <!-- Menu Items Begin -->
+        <nav id="pri-nav" class="site-navigation pri-nav " role="navigation">
+            <div class="menu-%e8%8f%9c%e5%8d%951-container"><ul id="menu-%e8%8f%9c%e5%8d%951" class="nav-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-140"><a target="_blank" href="http://aikongke.com/soft"><i class="fa fa-shield"></i>  软件控</a>
+                <ul class="sub-menu" style="display: none;">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a target="_blank" href="http://aikongke.com/it">IT 资讯</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a target="_blank" href="http://aikongke.com/soft/freeware">免费软件</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a target="_blank" href="http://aikongke.com/soft/office">办公软件</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a target="_blank" href="http://aikongke.com/soft/images">图形图像</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a target="_blank" href="http://aikongke.com/soft/security">杀毒安全</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a target="_blank" href="http://aikongke.com/soft/media">媒体工具</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a target="_blank" href="http://aikongke.com/soft/system">系统工具</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a target="_blank" href="http://aikongke.com/soft/network">网络工具</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a target="_blank" href="http://aikongke.com/soft/tips">知识技巧</a></li>
+                </ul>
+            </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-146"><a target="_blank" href="http://aikongke.com/phone"><i class="fa fa-tablet"></i>  手机控</a>
+                    <ul class="sub-menu" style="display: none;">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-739"><a target="_blank" href="http://aikongke.com/phone/ios">ios</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161"><a target="_blank" href="http://aikongke.com/phone/android">android</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-162"><a target="_blank" href="http://aikongke.com/phone/windows-phone">windows phone</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-139"><a target="_blank" href="http://aikongke.com/beautify"><i class="fa fa-leaf"></i>  美化控</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-156"><a target="_blank" href="http://aikongke.com/beautify/theme">主题图标</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-159"><a target="_blank" href="http://aikongke.com/beautify/rain">雨滴桌面</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-158"><a target="_blank" href="http://aikongke.com/beautify/barracuda">酷鱼桌面</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-160"><a target="_blank" href="http://aikongke.com/beautify/hd-wallpapers">高清壁纸</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a target="_blank" href="http://aikongke.com/beautify/landscaping">美化相关</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-150"><a target="_blank" href="http://aikongke.com/game"><i class="fa fa-gamepad"></i>  游戏控</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152"><a target="_blank" href="http://aikongke.com/game/single-game">单机游戏</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-4891"><a target="_blank" href="http://aikongke.com/tag/%e7%94%b5%e5%bd%b1"><i class="fa fa-film"></i>  高清无损</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-795"><a target="_blank" href="http://aikongke.com/hd">高清电影</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-794"><a target="_blank" href="http://aikongke.com/music">无损音乐</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-734"><a target="_blank" href="http://aikongke.com/wp"><i class="fa fa-wordpress"></i>  网站相关</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1620"><a target="_blank" href="http://aikongke.com/site.html">设计导航</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2463"><a href="http://aikongke.com/site/webcolor.html">网页配色</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5436"><a target="_blank" href="http://aikongke.com/%e9%9f%b3%e4%b9%90">音乐电台</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5241"><a target="_blank" href="http://aikongke.com/wp">WP相关</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2464"><a target="_blank" href="http://aikongke.com/site/64ma.html">直播TV</a></li>
+                    </ul>
+                </li>
+                <li class="span classglyphicon glyphicon-homespan menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5232"><a target="_blank" href="http://aikongke.com/articles"><i class="fa fa-list-ul"></i>  所有文章</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-560"><a target="_blank" href="http://aikongke.com/sitemap.html">百度地图</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-648"><a target="_blank" href="http://aikongke.com/sitemap.xml">谷歌地图</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5435"><a target="_blank" href="http://aikongke.com/articles">文章筛选</a></li>
+                    </ul>
+                </li>
+            </ul></div>			</nav>
+        <!-- Menu Items End -->
+    </div>
+    <div class="clr"></div>
+    <div class="site_loading" style="width: 100%; display: none;"></div>
+</header>
+
+</body>
+</html>
