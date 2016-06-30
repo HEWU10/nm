@@ -22,8 +22,10 @@ public class Item {
     private Integer sort;
     private String parent;
     @CreationTimestamp
+    @Column(insertable = true,updatable = false)
     private Date createDate;
     @UpdateTimestamp
+    @Column(insertable = true,updatable = true)
     private Date modifyDate;
     private Integer status;
 

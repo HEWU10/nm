@@ -5,10 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.Set;
 
 /**
  * Created by hewu on 2016/6/17 0017.
@@ -18,24 +15,31 @@ import java.util.Set;
 public class Article {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
-    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate", strategy = "uuid")
     private String id;
     private String title;
+    @Lob
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "content", columnDefinition = "TEXT", nullable = true)
     private String content;
-    private String itemId;
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Item.class)
+    @JoinColumn(name = "itemId", nullable = false, updatable = false)
+    private Item item;
 
     private Integer support;
     private Integer hate;
     private Integer see;
-    @CreationTimestamp
+    @CreationTimestamp()
+    @Column(updatable = false, insertable = true)
     private Date createDate;
     @UpdateTimestamp
+    @Column(insertable = true, updatable = true)
     private Date modifyDate;
     private Integer status;
 
-    @ManyToOne(fetch = FetchType.EAGER,targetEntity = Account.class)
-    @JoinColumn(name = "accountId",nullable = false,updatable = false)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Account.class)
+    @JoinColumn(name = "accountId", nullable = false, updatable = false)
     private Account account;
 
     public String getId() {
@@ -62,12 +66,12 @@ public class Article {
         this.content = content;
     }
 
-    public String getItemId() {
-        return itemId;
+    public Item getItem() {
+        return item;
     }
 
-    public void setItemId(String itemId) {
-        this.itemId = itemId;
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     public Integer getSupport() {
@@ -135,8 +139,8 @@ public class Article {
 
         if (id != null ? !id.equals(article.id) : article.id != null) return false;
         if (title != null ? !title.equals(article.title) : article.title != null) return false;
-        if (!Arrays.equals(content.getBytes(), article.content.getBytes())) return false;
-        if (itemId != null ? !itemId.equals(article.itemId) : article.itemId != null) return false;
+        if (content != null ? !content.equals(article.content) : article.content != null) return false;
+        if (item != null ? !item.equals(article.item) : article.item != null) return false;
         if (account != null ? !account.equals(article.account) : article.account != null) return false;
         if (support != null ? !support.equals(article.support) : article.support != null) return false;
         if (hate != null ? !hate.equals(article.hate) : article.hate != null) return false;
@@ -153,7 +157,7 @@ public class Article {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + account.hashCode();
-        result = 31 * result + (itemId != null ? itemId.hashCode() : 0);
+        result = 31 * result + (item != null ? item.hashCode() : 0);
         result = 31 * result + (account != null ? account.hashCode() : 0);
         result = 31 * result + (support != null ? support.hashCode() : 0);
         result = 31 * result + (hate != null ? hate.hashCode() : 0);

@@ -31,8 +31,10 @@ public class Account {
     private String email;
     private String address;
     @CreationTimestamp
+    @Column(insertable = true,updatable = false)
     private Date createDate;
     @UpdateTimestamp
+    @Column(insertable = true,updatable = true)
     private Date modifyDate;
     private Date birthDay;
     private String icon;

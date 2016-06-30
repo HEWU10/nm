@@ -6,8 +6,10 @@ import com.nm.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * 功能说明：TODO
@@ -51,5 +53,8 @@ public class ArticleServiceImpl implements ArticleService {
         return this.articleDao.deleteById(id);
     }
 
-
+    @Transactional
+    public List<Article> findAll() {
+        return this.articleDao.findAll();
+    }
 }

@@ -20,8 +20,10 @@ public class Tag {
     @JoinColumn(name = "accountId",updatable = false,nullable = false)
     private Account account;
     @CreationTimestamp
+    @Column(insertable = true,updatable = false)
     private Date createDate;
     @UpdateTimestamp
+    @Column(insertable = true,updatable = true)
     private Date modifyDate;
 
 

@@ -5,7 +5,6 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -16,16 +15,20 @@ import java.util.Date;
 @Table(name = "discuss")
 public class Discuss {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "UUIDGenerate")
-    @GenericGenerator(name = "UUIDGenerate" ,strategy = "uuid")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "UUIDGenerate")
+    @GenericGenerator(name = "UUIDGenerate", strategy = "uuid")
     private String id;
     private byte[] content;
-    private String articleId;
+    @JoinColumn(name = "articleId", nullable = false)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Article.class)
+    private Article article;
     private Integer support;
     private Integer hate;
     @CreationTimestamp
+    @Column(insertable = true, updatable = false)
     private Date createDate;
     @UpdateTimestamp
+    @Column(insertable = true, updatable = true)
     private Date modifyDate;
     private Integer status;
     private Integer floor;
@@ -46,12 +49,12 @@ public class Discuss {
         this.content = content;
     }
 
-    public String getArticleId() {
-        return articleId;
+    public Article getArticle() {
+        return article;
     }
 
-    public void setArticleId(String articleId) {
-        this.articleId = articleId;
+    public void setArticle(Article article) {
+        this.article = article;
     }
 
     public Integer getSupport() {
@@ -111,7 +114,7 @@ public class Discuss {
 
         if (id != null ? !id.equals(discuss.id) : discuss.id != null) return false;
         if (!Arrays.equals(content, discuss.content)) return false;
-        if (articleId != null ? !articleId.equals(discuss.articleId) : discuss.articleId != null) return false;
+        if (article != null ? !article.equals(discuss.article) : discuss.article != null) return false;
         if (support != null ? !support.equals(discuss.support) : discuss.support != null) return false;
         if (hate != null ? !hate.equals(discuss.hate) : discuss.hate != null) return false;
         if (createDate != null ? !createDate.equals(discuss.createDate) : discuss.createDate != null) return false;
@@ -126,7 +129,7 @@ public class Discuss {
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + Arrays.hashCode(content);
-        result = 31 * result + (articleId != null ? articleId.hashCode() : 0);
+        result = 31 * result + (article != null ? article.hashCode() : 0);
         result = 31 * result + (support != null ? support.hashCode() : 0);
         result = 31 * result + (hate != null ? hate.hashCode() : 0);
         result = 31 * result + (createDate != null ? createDate.hashCode() : 0);
