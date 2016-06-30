@@ -4,26 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script data-main="static/main" src="/nm/static/lib/require.js"></script>
     <style type="text/css">
-        .rt_h2 {
-            font-size: 16px;
-            font-family: Microsoft YaHei, SimHei, Verdana, Arial, sans-serif;
-            display: block;
-            font-size: 1.5em;
-            -webkit-margin-before: 0.83em;
-            -webkit-margin-after: 0.83em;
-            -webkit-margin-start: 0px;
-            -webkit-margin-end: 0px;
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
         #scrolltop {
             visibility: hidden;
             position: fixed;
@@ -48,75 +28,129 @@
             background: url(static/images/scrolltop.png) no-repeat 0 0;
             border-top: 0px #cdcdcd solid;
         }
+        #topnav {
+            width: 100%;
+            background: #31A9B3;
+            height: 50px;
+            line-height: 46px;
+        }
+        #topnav a {
+            color: #FFF;
+        }
+        #topnav a {
+            display: inline-block;
+            font-size: 18px;
+            font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+            padding: 0 20px;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            color: #666;
+        }
+        a {
+            outline: none;
+        }
+        #topnav_current {
+            background: #fff;
+            border-top: 4px solid #f77825;
+            color: #000;
+        }
+        a#topnav_current {
+            color: #000;
+        }
+        #topnav ul {
+            width: 1000px;
+            margin: auto;
+        }
+        ul {
+            list-style: none;
+        }
     </style>
 </head>
 <body>
 <!--  --------------------------------- 头部 ------------------------------------------- -->
-<div class="head">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="#">预留</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
+<!--<div class="head">-->
+    <!--<nav class="top-bar" data-topbar role="navigation">-->
+        <!--<ul class="title-area">-->
+            <!--<li class="name">-->
+                <!--<h1><a href="#">预留</a></h1>-->
+            <!--</li>-->
+            <!--<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>-->
+        <!--</ul>-->
 
-        <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                <li class="has-form">
-                    <div class="row collapse">
-                        <div class="large-8 small-9 columns">
-                            <input type="text" placeholder="Find Stuff">
-                        </div>
-                        <div class="large-4 small-3 columns">
-                            <a href="#" class="alert button expand">Search</a>
-                        </div>
-                    </div>
-                </li>
+        <!--<section class="top-bar-section">-->
+            <!--&lt;!&ndash; Right Nav Section &ndash;&gt;-->
+            <!--<ul class="right">-->
+                <!--<li class="has-form">-->
+                    <!--<div class="row collapse">-->
+                        <!--<div class="large-8 small-9 columns">-->
+                            <!--<input type="text" placeholder="Find Stuff">-->
+                        <!--</div>-->
+                        <!--<div class="large-4 small-3 columns">-->
+                            <!--<a href="#" class="alert button expand">Search</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
 
-                <li class="active"><a href="#">登录</a></li>
-                <li class="has-dropdown">
-                    <a href="#">我的账户</a>
-                    <ul class="dropdown">
-                        <li><a href="#">头像管理</a></li>
-                        <li class="active"><a href="#">账户信息</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <!--<li class="active"><a href="#">登录</a></li>-->
+                <!--<li class="has-dropdown">-->
+                    <!--<a href="#">我的账户</a>-->
+                    <!--<ul class="dropdown">-->
+                        <!--<li><a href="#">头像管理</a></li>-->
+                        <!--<li class="active"><a href="#">账户信息</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
 
-            <!-- Left Nav Section -->
-            <ul class="left">
-                <li><a href="#">预留</a></li>
-            </ul>
-        </section>
-    </nav>
-</div>
+            <!--&lt;!&ndash; Left Nav Section &ndash;&gt;-->
+            <!--<ul class="left">-->
+                <!--<li><a href="#">预留</a></li>-->
+            <!--</ul>-->
+        <!--</section>-->
+    <!--</nav>-->
+<!--</div>-->
+
+<nav id="topnav">
+    <ul>
+        <a href="http://localhost:8080/nm/" id="topnav_current">首页</a>
+        <a href="http://localhost:8080/nm/">内幕资讯</a>
+        <a href="http://localhost:8080/nm/">内幕资讯</a>
+        <a href="http://localhost:8080/nm/">内幕资讯</a>
+        <a href="http://localhost:8080/nm/">财经内幕</a>
+        <a href="http://localhost:8080/nm/">最新资讯</a>
+        <a href="http://localhost:8080/nm/">智能手机</a>
+        <a href="http://localhost:8080/nm/">手机常识</a>
+        <a href="http://localhost:8080/nm/">周边配件</a>
+        <a href="http://localhost:8080/nm/">手机生活</a>
+        <a href="http://localhost:8080/nm/">关于我们</a>
+
+    </ul>
+</nav>
 <!--  --------------------------------- body内容 ------------------------------------------- -->
 <hr/>
 <!--广告轮播-->
-<div style="height:100px;width: 40%;margin:55px auto 10px auto;text-align: center">
-    <div class="slider fade autoplay">
-        <div>
-            <div class="image"><img data-lazy="static/images/xiaomi.png"/></div>
-        </div>
-        <div>
-            <div class="image"><img data-lazy="static/images/xiaomi.png"/></div>
-        </div>
-        <div>
-            <div class="image"><img data-lazy="static/images/xiaomi.png"/></div>
-        </div>
-        <div>
-            <div class="image"><img data-lazy="static/images/xiaomi.png"/></div>
-        </div>
-        <div>
-            <div class="image"><img data-lazy="static/images/xiaomi.png"/></div>
-        </div>
-        <div>
-            <div class="image"><img data-lazy="static/images/xiaomi.png"/></div>
-        </div>
-    </div>
-</div>
+<!--<div style="height:100px;width: 40%;margin:55px auto 10px auto;text-align: center">-->
+    <!--<div class="slider fade autoplay">-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <div style="clear:both ;"></div>
 <!-- 中部内容 -->
 
@@ -217,14 +251,6 @@
             <div>
                 <h2 class="rt_h2">热帖排行</h2>
             </div>
-            <ul style="margin: 0;padding: 0;">
-                <li>
-                    <a target="_blank" href="http://www.miui.com/thread-4318922-1-1.html">
-                        <img width="218" style="margin: 10px 0px 0px;" title="极客试用"
-                             src="http://attach.bbs.miui.com/album/201605/26/172451mwxcz52kcerckm51.png"></a>
-                </li>
-            </ul>
-
             <ul class="u_article" style="margin: 0;padding: 0;">
                 <li><a href="thread-3415047-1-1.html" title="近期“回复可见”的灌水处理公告" target="_blank">近期“回复可见”的灌水处理公告</a></li>
                 <li><a href="thread-4413551-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a>
@@ -243,14 +269,6 @@
             <div>
                 <h2 class="rt_h2">热帖排行</h2>
             </div>
-            <ul style="margin: 0;padding: 0;">
-                <li>
-                    <a target="_blank" href="http://www.miui.com/thread-4318922-1-1.html">
-                        <img width="218" style="margin: 10px 0px 0px;" title="极客试用"
-                             src="http://attach.bbs.miui.com/album/201605/26/172451mwxcz52kcerckm51.png"></a>
-                </li>
-            </ul>
-
             <ul class="u_article" style="margin: 0;padding: 0;">
                 <li><a href="thread-3415047-1-1.html" title="近期“回复可见”的灌水处理公告" target="_blank">近期“回复可见”的灌水处理公告</a></li>
                 <li><a href="thread-4413551-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a>
