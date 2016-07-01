@@ -73,6 +73,7 @@ img.avatar {
 body a {
     color: #60717e;
     text-decoration: none;
+    text-underline: none;
     background: transparent;
     font-size: 100%;
     margin: 0;
@@ -936,14 +937,6 @@ body.home .breadcrumbs {
     outline: 0;
     position: absolute;
     cursor: pointer
-}
-
-#searchsubmit:hover {
-    background: #919191
-}
-
-#searchsubmit i {
-    position: relative
 }
 
 .breadcrumbs-text {
@@ -12332,4 +12325,27 @@ article h3 a:hover, .tab-item-title a:hover, .more-link, .slider-text h2 a:hover
     article p, .content, .content a, .content li, single-content, single-text, single-content a, single-text a, .sg-cp p, .widget, .widget a {
         font-size: 12px !important;
     }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue
+}
+
+a:active {
+    text-decoration: blink
+}
+
+a:hover {
+    text-decoration: none;
+    color: red
+}
+
+a:visited {
+    text-decoration: none;
+    color: green
 }

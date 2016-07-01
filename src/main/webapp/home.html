@@ -2,144 +2,863 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href="static/lib/awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="static/lib/boot/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/common.css" rel="stylesheet">
+    <script src="static/lib/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="static/lib/boot/js/bootstrap.js" type="text/javascript"></script>
 
-    <script data-main="static/main" src="static/lib/require.js"></script>
-    <style type="text/css">
-
-    </style>
 </head>
 <body>
 <!--<div class="margin-center">-->
-    <!--<div class="nav navbar-static-top" style="align">-->
-       <!--<div class="container text-center">-->
-           <!--测试导航栏-->
-       <!--</div>-->
+<!--<div class="nav navbar-static-top" style="align">-->
+<!--<div class="container text-center">-->
+<!--测试导航栏-->
+<!--</div>-->
 
-    <!--</div>-->
+<!--</div>-->
 <!--</div>-->
 
 <header class="header-wrap" id="nav-scroll">
     <div class="nav-wrap">
         <div class="logo-title">
-            <a href="http://aikongke.com" alt="爱控客" title="爱控客">
-                爱控客				</a>
+            <a href="http://aikongke.com" alt="内幕网" title="内幕网">
+                内幕网 </a>
         </div>
-        <!-- Toggle menu -->
-        <div class="toggle-menu">
-            <i class="fa fa-bars"></i>
-        </div>
-        <!-- /.Toggle menu -->
-        <!-- Search button -->
-        <div class="search-btn-click">
-            <i class="fa fa-search"></i>
-            <div class="header-search-slide">
-                <form method="get" id="searchform-slide" class="searchform" action="http://aikongke.com" role="search">
-                    <input type="search" class="field" name="s" value="" placeholder="Search" required="">
-                </form>
-            </div>
-        </div>
-        <!-- /.Search button -->
         <!-- Login status -->
         <div id="login-reg">
             <span data-sign="0" id="user-login" class="user-login ie_pie only-login"> 登录</span>
         </div>
         <!-- /.Login status -->
-        <!-- Focus us -->
-        <div id="focus-us">
-            关注我们<div id="focus-slide" class="ie_pie">
-            <div class="focus-title">关注我们</div>
-            <p class="focus-content">
-                <a href="http://weibo.com/3753151687" target="_blank" class="sinaweibo"><span><i class="fa fa-weibo"></i>新浪微博</span></a>
-                <a href="http://t.qq.com/touchumind" target="_blank" class="sinaweibo"><span><i class="fa fa-tencent-weibo"></i>腾讯微博</span></a>
-            </p>
-            <div class="focus-title">联系我们</div>
-            <p class="focus-content" style="line-height: 20px;margin-bottom: 10px;">
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=645944229&amp;site=qq&amp;menu=yes" target="_blank" class="qq"><span><i class="fa fa-qq"></i>QQ</span></a>
-                <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=cBMYGR4RAxhCQEFAMAYZAF4BAV4THx0" target="_blank"><span><i class="fa fa-envelope"></i>发送邮件</span></a>
-                <!-- 可删除 -->
-                <!-- 删除截止 -->
-            </p>
-            <div class="focus-title">订阅本站<i class="fa fa-rss"></i></div>
-            <p class="focus-content">
-                <input type="text" name="rss" class="rss" value="http://aikongke.com/feed">
-            </p>
-            <p class="focus-content">订阅到： <a rel="external nofollow" target="_blank" href="http://xianguo.com/subscribe?url=http://aikongke.com/feed">鲜果</a>
-                <a rel="external nofollow" target="_blank" href="http://reader.youdao.com/b.do?keyfrom=bookmarklet&amp;url=http://aikongke.com/feed">有道</a>
-                <a rel="external nofollow" target="_blank" href="http://feedly.com/index.html#subscription%2Ffeed%2Fhttp://aikongke.com/feed">Feedly</a></p>
-            <form action="http://list.qq.com/cgi-bin/qf_compose_send" target="_blank" method="post">
-                <input type="hidden" name="t" value="qf_booked_feedback">
-                <input type="hidden" name="id" value="7e2395e0da222bfbe444d7246020db3f09d05f85db896a61">
-                <input type="email" name="to" id="to" class="focus-email" placeholder="输入邮箱,订阅本站" required="">
-                <input type="submit" class="focus-email-submit" value="订阅">
-            </form>
-
-        </div>
-        </div>			<!-- /.Focus us -->
         <!-- Menu Items Begin -->
         <nav id="pri-nav" class="site-navigation pri-nav " role="navigation">
-            <div class="menu-%e8%8f%9c%e5%8d%951-container"><ul id="menu-%e8%8f%9c%e5%8d%951" class="nav-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-140"><a target="_blank" href="http://aikongke.com/soft"><i class="fa fa-shield"></i>  软件控</a>
-                <ul class="sub-menu" style="display: none;">
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a target="_blank" href="http://aikongke.com/it">IT 资讯</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a target="_blank" href="http://aikongke.com/soft/freeware">免费软件</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a target="_blank" href="http://aikongke.com/soft/office">办公软件</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a target="_blank" href="http://aikongke.com/soft/images">图形图像</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a target="_blank" href="http://aikongke.com/soft/security">杀毒安全</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a target="_blank" href="http://aikongke.com/soft/media">媒体工具</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a target="_blank" href="http://aikongke.com/soft/system">系统工具</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a target="_blank" href="http://aikongke.com/soft/network">网络工具</a></li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a target="_blank" href="http://aikongke.com/soft/tips">知识技巧</a></li>
+            <div class="menu-%e8%8f%9c%e5%8d%951-container">
+                <ul id="menu-%e8%8f%9c%e5%8d%951" class="nav-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-140">
+                        <a target="_blank" href="http://aikongke.com/soft"><i
+                                class="fa fa-shield"></i> 微博热点</a>
+
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-146">
+                        <a target="_blank" href="http://aikongke.com/phone"><i
+                                class="fa fa-tablet"></i> 头条</a>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-139">
+                        <a target="_blank" href="http://aikongke.com/beautify"><i
+                                class="fa fa-leaf"></i> 产业黑</a>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-150">
+                        <a target="_blank" href="http://aikongke.com/game"><i
+                                class="fa fa-gamepad"></i> 商家爆</a>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-4891">
+                        <a target="_blank" href="http://aikongke.com/tag/%e7%94%b5%e5%bd%b1"><i
+                                class="fa fa-film"></i> 各种黑</a>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-734">
+                        <a target="_blank" href="http://aikongke.com/wp"><i
+                                class="fa fa-wordpress"></i> 网站相关</a>
+                    </li>
+                    <li class="span classglyphicon glyphicon-homespan menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5232">
+                        <a target="_blank" href="http://aikongke.com/articles"><i
+                                class="fa fa-list-ul"></i> 所有文章</a>
+                    </li>
                 </ul>
-            </li>
-                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-146"><a target="_blank" href="http://aikongke.com/phone"><i class="fa fa-tablet"></i>  手机控</a>
-                    <ul class="sub-menu" style="display: none;">
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-739"><a target="_blank" href="http://aikongke.com/phone/ios">ios</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161"><a target="_blank" href="http://aikongke.com/phone/android">android</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-162"><a target="_blank" href="http://aikongke.com/phone/windows-phone">windows phone</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-139"><a target="_blank" href="http://aikongke.com/beautify"><i class="fa fa-leaf"></i>  美化控</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-156"><a target="_blank" href="http://aikongke.com/beautify/theme">主题图标</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-159"><a target="_blank" href="http://aikongke.com/beautify/rain">雨滴桌面</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-158"><a target="_blank" href="http://aikongke.com/beautify/barracuda">酷鱼桌面</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-160"><a target="_blank" href="http://aikongke.com/beautify/hd-wallpapers">高清壁纸</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a target="_blank" href="http://aikongke.com/beautify/landscaping">美化相关</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-150"><a target="_blank" href="http://aikongke.com/game"><i class="fa fa-gamepad"></i>  游戏控</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152"><a target="_blank" href="http://aikongke.com/game/single-game">单机游戏</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-4891"><a target="_blank" href="http://aikongke.com/tag/%e7%94%b5%e5%bd%b1"><i class="fa fa-film"></i>  高清无损</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-795"><a target="_blank" href="http://aikongke.com/hd">高清电影</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-794"><a target="_blank" href="http://aikongke.com/music">无损音乐</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-734"><a target="_blank" href="http://aikongke.com/wp"><i class="fa fa-wordpress"></i>  网站相关</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1620"><a target="_blank" href="http://aikongke.com/site.html">设计导航</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2463"><a href="http://aikongke.com/site/webcolor.html">网页配色</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5436"><a target="_blank" href="http://aikongke.com/%e9%9f%b3%e4%b9%90">音乐电台</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5241"><a target="_blank" href="http://aikongke.com/wp">WP相关</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2464"><a target="_blank" href="http://aikongke.com/site/64ma.html">直播TV</a></li>
-                    </ul>
-                </li>
-                <li class="span classglyphicon glyphicon-homespan menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5232"><a target="_blank" href="http://aikongke.com/articles"><i class="fa fa-list-ul"></i>  所有文章</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-560"><a target="_blank" href="http://aikongke.com/sitemap.html">百度地图</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-648"><a target="_blank" href="http://aikongke.com/sitemap.xml">谷歌地图</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5435"><a target="_blank" href="http://aikongke.com/articles">文章筛选</a></li>
-                    </ul>
-                </li>
-            </ul></div>			</nav>
+            </div>
+        </nav>
         <!-- Menu Items End -->
     </div>
     <div class="clr"></div>
     <div class="site_loading" style="width: 100%; display: none;"></div>
+    <div class="main-wrap">
+        <div class="container two-col-container cms-bar">
+            <div id="main-wrap-left">
+                <!-- Stickys -->
+                <section class="stickys clr">
+                    <h2 class="home-heading clr">
+		<span class="heading-text-blog">
+			置顶推荐		</span>
+                    </h2>
+                    <div class="stickys-container stickys-two-col stickys-latest-list clr">
+
+                        <article class="clr col-small">
+                            <div class="inner">
+                                <a href="http://aikongke.com/5483.html" title="Bandicam 3.0.4.1035 注册便携版 最佳视频录像软件" class="fancyimg home-blog-entry-thumb">
+                                    <div class="thumb-img">
+                                        <img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/04/BaiduShurufa_2016-4-13_18-36-30-550x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Bandicam 3.0.4.1035 注册便携版 最佳视频录像软件">
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                </a>
+                                <h3><a href="http://aikongke.com/5483.html" title="Bandicam 3.0.4.1035 注册便携版 最佳视频录像软件" target="_blank">Bandicam 3.0.4.1035 注册便携版 最佳视频录像软件</a></h3>
+                                <p>
+                                    Bandicam 3.0.4.1035 注册便携版被认为是视频录制神器之一，它的特点用三个短句概括为：简明的操作 流畅的录制 超清的画质，它的优势在于对硬件配置要求低，可以非常流畅度地运行，在录制视频时也不会出现卡顿现象。它录制的视频文件不仅体积小，而且画质相当清晰，支持H.264预制高清，以较高的压缩率可录制超过最高分辨率2560×1600画质视频（1080p全高清视频），录制的同时还可以添加一些个性化 LOGO元素等，支持高清 png、jpg 等格式截图。 参考资料：bandicam如何录制read more/更多			</p>
+                            </div>
+                            <div class="meta">
+                                <span class="date">3个月前 (04-13)</span>
+                                <span class="views">浏览: 224</span>
+                                <span class="comments">评论: 0</span>
+                            </div>
+                        </article>
+
+                        <article class="clr col-small">
+                            <div class="inner">
+                                <a href="http://aikongke.com/5450.html" title="纸牌屋 第四季 House.Of.Cards.2016.S04.中英字幕.WEBrip" class="fancyimg home-blog-entry-thumb">
+                                    <div class="thumb-img">
+                                        <img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/f3f42255cfc594f2c0d26a42f5450d4e.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="纸牌屋 第四季 House.Of.Cards.2016.S04.中英字幕.WEBrip">
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                </a>
+                                <h3><a href="http://aikongke.com/5450.html" title="纸牌屋 第四季 House.Of.Cards.2016.S04.中英字幕.WEBrip" target="_blank">纸牌屋 第四季 House.Of.Cards.2016.S04.中英字幕.WEBrip</a></h3>
+                                <p>
+                                    《纸牌屋第四季》是由Netflix出品的悬疑政治剧，该剧由凯文·史派西、罗宾·怀特等主演。该剧于美国时间2016年3月4日上线。 第1集|第2集|第3集|第4集|第5集|第6集|第7集 第8集|第9集|第10集|第11集|第12集|第13集			</p>
+                            </div>
+                            <div class="meta">
+                                <span class="date">3个月前 (03-29)</span>
+                                <span class="views">浏览: 245</span>
+                                <span class="comments">评论: 0</span>
+                            </div>
+                        </article>
+
+                        <article class="clr col-small">
+                            <div class="inner">
+                                <a href="http://aikongke.com/5396.html" title="Adobe CC Family (CC 2015) 大师破解版v5.1 Adobe全系列赢政整合版" class="fancyimg home-blog-entry-thumb">
+                                    <div class="thumb-img">
+                                        <img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/cc.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Adobe CC Family (CC 2015) 大师破解版v5.1 Adobe全系列赢政整合版">
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                </a>
+                                <h3><a href="http://aikongke.com/5396.html" title="Adobe CC Family (CC 2015) 大师破解版v5.1 Adobe全系列赢政整合版" target="_blank">Adobe CC Family (CC 2015) 大师破解版v5.1 Adobe全系列赢政整合版</a></h3>
+                                <p>
+                                    x64版本，大师版理论上无需过多操作，但实际可能会出现问题，请自行按照独立版离线激活手动处理。 考虑到家庭整合包文件过大，需要少数软件的请自行下载原版之后按照说明进行破解激活，下面另外单独提供最新的两款破解器，一款为算号注册机，一款为DLL文件替换破解工具，双重保险，自行选择。 出现问题请反馈，不看说明导致的低级问题恕不回复！ Adobe CC Family (CC 2015) 大师破解版v5.1 合集出自赢政论坛liuhangtnnd之手，相比其他版本，ADOBE CC 赢政版安装简单，无需断read more/更多			</p>
+                            </div>
+                            <div class="meta">
+                                <span class="date">1年前 (2015-06-30)</span>
+                                <span class="views">浏览: 18228</span>
+                                <span class="comments">评论: 14</span>
+                            </div>
+                        </article>
+
+                        <article class="clr col-small">
+                            <div class="inner">
+                                <a href="http://aikongke.com/5371.html" title="[冰与火之歌/权利的游戏 前四季合集 Game of Thrones S01-S04 Bluray 720p][中英]" class="fancyimg home-blog-entry-thumb">
+                                    <div class="thumb-img">
+                                        <img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/aikongke.com_2015-06-28_02-51-02-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[冰与火之歌/权利的游戏 前四季合集 Game of Thrones S01-S04 Bluray 720p][中英]">
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                </a>
+                                <h3><a href="http://aikongke.com/5371.html" title="[冰与火之歌/权利的游戏 前四季合集 Game of Thrones S01-S04 Bluray 720p][中英]" target="_blank">[冰与火之歌/权利的游戏 前四季合集 Game of Thrones S01-S04 Bluray 720p][中英]</a></h3>
+                                <p>
+                                    [美国][冰与火之歌/权利的游戏 前四季合集][Game of Thrones S01-S04 2011-2014 Bluray 720p x265 AAC(5.1)-GREENOTEA][S01-S04全40集][720P][中英字幕]衣柜字幕 导演:&nbsp;艾利克斯·格雷夫斯 编剧:&nbsp;戴维·贝尼奥夫&nbsp;/&nbsp;D·B·威斯&nbsp;/&nbsp;乔治·马丁 主演:&nbsp;彼特·丁拉基&nbsp;/&nbsp;尼古拉·科斯特-瓦尔道&nbsp;/&nbsp;琳娜·海蒂&nbsp;/&nbsp;艾米莉亚·克拉克&nbsp;/&nbsp;基特·哈灵顿&nbsp;/&nbsp;查尔斯·丹斯&nbsp;/&nbsp;娜塔莉·多默尔&nbsp;/&nbsp;杰克·格里森&nbsp;/&nbsp;read more/更多			</p>
+                            </div>
+                            <div class="meta">
+                                <span class="date">1年前 (2015-06-28)</span>
+                                <span class="views">浏览: 991</span>
+                                <span class="comments">评论: 2</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- /.Stickys -->	<section class="catlist-64 catlist clr">
+                <div class="catlist-container clr">
+                    <h2 class="home-heading clr">
+				<span class="heading-text">
+					软件控				</span>
+                        <a href="http://aikongke.com/soft" target="_blank">+ 更多</a>
+                    </h2>
+		<span class="s1 left">
+<article class="clr col-small">
+	<span class="views">764</span>
+								<a href="http://aikongke.com/5488.html" title="[Android] 百度云 7.12.0 去广告不限速精简版" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/04/baidu_netdisk_7.12.0-750x456.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[Android] 百度云 7.12.0 去广告不限速精简版">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5488.html" title="[Android] 百度云 7.12.0 去广告不限速精简版" target="_blank">[Android] 百度云 7.12.0 去广告不限速精简版</a></h3>
+	<p>
+		现在很多文件的网络流通都是通过百度云盘的，百度云在初期凭借超大空间和高速传输赢得了广阔市场，开通VIP功能后使用体验急剧下降，所以很多人需要百度云去广告不限速精简版&nbsp;，今天分享的这个百度云 7.12.0版本，不限速，精简了一些无用功能，专注存储和传输。 百度网盘为您提供文件的网络备份、同步和分享服务。它空间大、2T永久免费空间，支持教育网加速，支持手机端，具有自定义目录、相册、通讯录、通话记录自动备份，手机找回、密码锁、云端加密等功能。 本版介绍 * 去除自启触发无用等权限 * 去除首次启动动画<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5488.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 right">
+<article class="clr col-small">
+	<span class="views">295</span>
+								<a href="http://aikongke.com/5485.html" title="{限免}Lighten PDF to Word Converter PDF转换Word[$29.99→0] Delete Duplicates Fast 删除重复文件[￥6→0]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/04/105702Yep-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="{限免}Lighten PDF to Word Converter PDF转换Word[$29.99→0] Delete Duplicates Fast 删除重复文件[￥6→0]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5485.html" title="{限免}Lighten PDF to Word Converter PDF转换Word[$29.99→0] Delete Duplicates Fast 删除重复文件[￥6→0]" target="_blank">{限免}Lighten PDF to Word Converter PDF转换Word[$29.99→0] Delete Duplicates Fast 删除重复文件[￥6→0]</a></h3>
+	<p>
+		Lighten PDF to Word Converter – PDF 转换为 Word 文档[Windows][$29.99→0] Lighten PDF to Word Converter 是一款能够将 PDF 文档转换为 Word 文档的软件，支持.docx, .doc, .txt 格式，由于没有内置 OCR 引擎，所以对于扫描版的 PDF 文档则无能为力了，其实吧，有OCR 引擎也没啥用，现在文字识别技术还不够成熟错误率太高，人工纠错工程量也不小。 获取地址：http://thewind<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5485.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 left">
+<article class="clr col-small">
+	<span class="views">196</span>
+								<a href="http://aikongke.com/5463.html" title="限免信息：Advanced Mac Cleaner[$39.95→0] Fast Browser Cleaner[$19.9→0]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/banner_ss.png&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="限免信息：Advanced Mac Cleaner[$39.95→0] Fast Browser Cleaner[$19.9→0]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5463.html" title="限免信息：Advanced Mac Cleaner[$39.95→0] Fast Browser Cleaner[$19.9→0]" target="_blank">限免信息：Advanced Mac Cleaner[$39.95→0] Fast Browser Cleaner[$19.9→0]</a></h3>
+	<p>
+		注意：正版限时免费活动软件基本不提供免费版本更新服务，过期活动链接失效。 Advanced Mac Cleaner – OS X 系统清理软件[OS X][$39.95→0] Advanced Mac Cleaner 是一款 OS X 系统的清理软件，可以为你找出系统中的重复文件，能够让你对安装了的软件进行管理，可以让你清理历史使用记录，还有多种不同的清理工具让你能够优化系统文件存在情况。 获取地址：http://macappsonsale.com/app/advanced-mac-cleane<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5463.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 right">
+<article class="clr col-small">
+	<span class="views">209</span>
+								<a href="http://aikongke.com/5459.html" title="Ditto V3.21.50.0汉化便携版  剪贴板增强工具" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/BaiduShurufa_2016-3-30_20-56-17.png&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Ditto V3.21.50.0汉化便携版  剪贴板增强工具">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5459.html" title="Ditto V3.21.50.0汉化便携版  剪贴板增强工具" target="_blank">Ditto V3.21.50.0汉化便携版  剪贴板增强工具</a></h3>
+	<p>
+		Ditto V3.21.50.0汉化便携版值得你的尝试，多次复制，选择粘贴，自己一直在用的一款剪贴板增强软件，谁用谁知道，对于经常做文案工作的人来说可以节省大量的繁琐操作。 强大、易用、免费、开源的剪贴板增强工具Ditto&nbsp;，支持编辑、搜索、比较、定位、透明度、滚动窗口、显示缩略图、声音提示、导入/导出、网络同步、分组记录、全局热键、名称粘贴和断开/连接剪贴板等功能。Ditto 可保存任何类型的信息，支持 Unicode 编码，可将文本、图像、HTML，自定义格式等放入剪贴板中。按下“ Ctrl<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5459.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 left">
+<article class="clr col-small">
+	<span class="views">205</span>
+								<a href="http://aikongke.com/5448.html" title="【正版限免】Bigasoft Video Downloader Pro 在线流视频下载转换工具" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/BaiduShurufa_2016-3-29_16-35-30-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="【正版限免】Bigasoft Video Downloader Pro 在线流视频下载转换工具">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5448.html" title="【正版限免】Bigasoft Video Downloader Pro 在线流视频下载转换工具" target="_blank">【正版限免】Bigasoft Video Downloader Pro 在线流视频下载转换工具</a></h3>
+	<p>
+		Bigasoft 家的视频工具都挺不错的，转换工具可以用Bigasoft Total Video Converter 4.2.9.5283单文件破解版 全能视频转换器 注意：领取期限限制，2016年2月29日开始的2天内。这次限时免费活动，不提供mac版的限免，仅windows版。 在线tube流点播视频下载转换工具Bigasoft Video Downloader Pro主要用于： 1.网络youtube，youku，这类的tube，streaming online video，video o<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5448.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 right">
+<article class="clr col-small">
+	<span class="views">231</span>
+								<a href="http://aikongke.com/5446.html" title="酷狗音乐V8.0.43去广告VIP版" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/BaiduShurufa_2016-3-29_16-13-45-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="酷狗音乐V8.0.43去广告VIP版">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5446.html" title="酷狗音乐V8.0.43去广告VIP版" target="_blank">酷狗音乐V8.0.43去广告VIP版</a></h3>
+	<p>
+		酷狗音乐是一款中国国内最先提供在线试听功能的音频播放软件，酷狗音乐播放器有着丰富的音乐资源，新老歌、流行歌曲搜索。通过酷狗音乐盒您可以支持高音质音乐下载。 安装：右键管理员运行绿化bat，酷狗挺不错的，音效现在弄得听着不错，然而我是把它当音乐下载工具了，而不是播放器…… 本版特点 •&nbsp;破解VIP会员、VIP试听下载加速特权、免登陆试听下载VIP无损音乐特权 •&nbsp;免登陆都可享受VIP无损音乐下载特权、下载歌曲或MV自动开始VIP加速 •&nbsp;100G云空间(没破解只有5G)、专属VIP身份标识(随便注<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5446.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 left">
+<article class="clr col-small">
+	<span class="views">327</span>
+								<a href="http://aikongke.com/5443.html" title="直播关注助手 全面的各直播平台集合工具" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/BaiduShurufa_2016-3-28_23-9-2.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="直播关注助手 全面的各直播平台集合工具">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5443.html" title="直播关注助手 全面的各直播平台集合工具" target="_blank">直播关注助手 全面的各直播平台集合工具</a></h3>
+	<p>
+		是Chrome内核应用，再也不用担心找不到主播了，重度直播看客适用工具。直播关注助手是一款可以在一个地方同时关注各大直播平台主播直播情况的实用工具。 右下角还会弹框提醒你主播开播了~直播关注助手目前支持 斗鱼、熊猫、战旗、虎牙、哔哩哔哩、全民、ニコニコ、twitch、火猫。 直播关注助手&nbsp;利用了直播网站原有的订阅功能，只需要&nbsp;注册 &gt; 登录直播网站 &gt; 订阅喜欢的主播点 就可以整合在 Chrome 里了。再也不用一个网站一个网站的去了。<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5443.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="s1 right">
+<article class="clr col-small">
+	<span class="views">92</span>
+								<a href="http://aikongke.com/5441.html" title="XMedia Recode 3.3.0.6 Portable中文便携版 视频格式装换工具" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/BaiduShurufa_2016-3-28_22-22-49-653x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="XMedia Recode 3.3.0.6 Portable中文便携版 视频格式装换工具">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5441.html" title="XMedia Recode 3.3.0.6 Portable中文便携版 视频格式装换工具" target="_blank">XMedia Recode 3.3.0.6 Portable中文便携版 视频格式装换工具</a></h3>
+	<p>
+		XMedia Recode 3.3.0.6 Portable便携版是一款优秀的视频转换软件，支持DVD, AVI, MP4, 3GP, WMV, ASF等格式转换。支持iPod, iPhone, Samsung, SonyEricsson, Zune, PSP, Blackberry, LG, 等设备。 XMedia Recode 支持的格式： 3GP, 3GPP, 3GPP2, AAC, AC3, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV,H.261, H<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5441.html">read more/更多</a>	</p>
+</article>
+</span>
+
+                </div>
+            </section>
+                <div id="loopad" class="container banner">
+                </div>
+                <section class="catlist-208 catlist clr">
+                    <div class="catlist-container clr">
+                        <h2 class="home-heading clr">
+				<span class="heading-text">
+					高清电影				</span>
+                            <a href="http://aikongke.com/hd" target="_blank">+ 更多</a>
+                        </h2>
+		<span class="col s5 span_1_of_3 col-1">
+<article class="home-blog-entry clr">
+								<a href="http://aikongke.com/5372.html" title="[疯狂的麦克斯4：狂暴之路 Mad.Max.Fury.Road.2015.1080p.WEB-DL][动作/科幻][中英]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/p2243490054.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[疯狂的麦克斯4：狂暴之路 Mad.Max.Fury.Road.2015.1080p.WEB-DL][动作/科幻][中英]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<div class="home-blog-entry-text contentcms-entry-text clr">
+	<h3>
+		<a href="http://aikongke.com/5372.html" title="[疯狂的麦克斯4：狂暴之路 Mad.Max.Fury.Road.2015.1080p.WEB-DL][动作/科幻][中英]" target="_blank">[疯狂的麦克斯4：狂暴之路 Mad.Max.Fury.Road.2015.1080p.WEB-DL][动作/科幻][中英]</a>
+	</h3>
+	<p>
+		[欧美] [疯狂的麦克斯4：狂暴之路][Mad.Max.Fury.Road.2015.1080p.WEB-DL.DD5.1.H264.AC3-ShinY][动作/科幻/冒险][内封中英字幕/英语][深影特效字幕] 墙裂推荐，爽的一B…… ◎译　　名　疯狂的麦克斯4：狂暴之路/末日先锋：战甲飞车(港)/疯狂麦斯：愤怒道(台)/冲锋飞车队4/迷雾追魂手4/冲锋追魂手4/疯狂麦克斯4 ◎片　　名　Mad Max: Fury Road ◎年　　代　2015 ◎国　　家　澳大利亚/美国 ◎类　　别　动作/<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5372.html">read more/更多</a>	</p>
+	<div class="line"></div>
+            <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-06-28</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;1107</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5372" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+            <!-- /.Post meta -->
+	</div>
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-2">
+<article class="home-blog-entry clr">
+								<a href="http://aikongke.com/5364.html" title="[冰与火之歌:权力的游戏 第五季第十集 Game.of.Thrones.S05E10.720p.HDTV]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/aikongke.com_2015-06-15_05-13-33-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[冰与火之歌:权力的游戏 第五季第十集 Game.of.Thrones.S05E10.720p.HDTV]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<div class="home-blog-entry-text contentcms-entry-text clr">
+	<h3>
+		<a href="http://aikongke.com/5364.html" title="[冰与火之歌:权力的游戏 第五季第十集 Game.of.Thrones.S05E10.720p.HDTV]" target="_blank">[冰与火之歌:权力的游戏 第五季第十集 Game.of.Thrones.S05E10.720p.HDTV]</a>
+	</h3>
+	<p>
+		[美国][冰与火之歌:权力的游戏 第五季][Game.of.Thrones.S05E10.720p.HDTV.x264-IMMERSE][S05E10] ◎译　　名　冰与火之歌：权力的游戏 ◎片　　名　Game&nbsp;of&nbsp;Thrones ◎年　　代　2011 ◎国　　家　美国 ◎类　　别　剧情/奇幻 ◎语　　言　英语 ◎IMDB评分&nbsp;&nbsp;9.5/10&nbsp;(17,320&nbsp;votes) ◎IMDB链接&nbsp;&nbsp;http://www.imdb.com/title/tt0944947/ ◎导　　演　Brian&nbsp;Kir<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5364.html">read more/更多</a>	</p>
+	<div class="line"></div>
+            <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-06-15</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;540</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5364" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+            <!-- /.Post meta -->
+	</div>
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-3">
+<article class="home-blog-entry clr">
+								<a href="http://aikongke.com/5334.html" title="[盗墓笔记 The.Lost.Tomb.E01-02.1080p.WEB-DL][一二集][李易峰/杨洋/唐嫣]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/x_307543389521.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[盗墓笔记 The.Lost.Tomb.E01-02.1080p.WEB-DL][一二集][李易峰/杨洋/唐嫣]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<div class="home-blog-entry-text contentcms-entry-text clr">
+	<h3>
+		<a href="http://aikongke.com/5334.html" title="[盗墓笔记 The.Lost.Tomb.E01-02.1080p.WEB-DL][一二集][李易峰/杨洋/唐嫣]" target="_blank">[盗墓笔记 The.Lost.Tomb.E01-02.1080p.WEB-DL][一二集][李易峰/杨洋/唐嫣]</a>
+	</h3>
+	<p>
+		[盗墓笔记 The.Lost.Tomb 1080P下载][E01-02][李易峰/杨洋/唐嫣] 《盗墓笔记》是2014年欢瑞世纪影视传媒股份有限公司出品的一部网络季播剧，改编自南派三叔所著的同名小说，由郑保瑞和罗永昌联合导演，李易峰、唐嫣、 杨洋、刘天佐、张智尧、魏巍等主演。 该剧主要讲述了五个主要角色进入古墓探险的故事，采用季播剧形式，单季投资过千万元，第一季拍摄12集。 该剧定档于2015年6月12日首播。 然而并不好看！！！ 导演:&nbsp;郑保瑞&nbsp;/&nbsp;罗永昌 又名:&nbsp;盗墓笔记&nbsp;第一季&nbsp;/&nbsp;考古笔<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5334.html">read more/更多</a>	</p>
+	<div class="line"></div>
+            <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-06-14</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;663</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5334" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+            <!-- /.Post meta -->
+	</div>
+</article>
+</span>
+                        <div class="home-small-entry-wrap"><span class="col s5 span_1_of_3 col-1">
+<article class="home-small-entry clr col-small">
+								<a href="http://aikongke.com/5328.html" title="太平轮(上) The.Crossing.I.2014.BluRay.iPad.720p[爱情/战争][导演：吴宇森]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/2122c40d3143c9e0430cadd18e80e4d6.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="太平轮(上) The.Crossing.I.2014.BluRay.iPad.720p[爱情/战争][导演：吴宇森]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<div class="home-small-entry-text clr">
+		<h3>
+			<a href="http://aikongke.com/5328.html" title="太平轮(上) The.Crossing.I.2014.BluRay.iPad.720p[爱情/战争][导演：吴宇森]" target="_blank">太平轮(上) The.Crossing.I.2014.BluRay.iPad.720p[爱情/战争][导演：吴宇森]</a>
+		</h3>
+	</div>
+	<div class="line"></div>
+    <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-06-14</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;355</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5328" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>0</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+    <!-- /.Post meta -->
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-2">
+<article class="home-small-entry clr col-small">
+								<a href="http://aikongke.com/5313.html" title="[美国][超能查派/查皮/伙伴/超人类:卓比(港)/成人世界(台) Chappie.2015.720p.WEB-DL][动作科幻]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/article_1415172540_083722.10628970_1-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[美国][超能查派/查皮/伙伴/超人类:卓比(港)/成人世界(台) Chappie.2015.720p.WEB-DL][动作科幻]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<div class="home-small-entry-text clr">
+		<h3>
+			<a href="http://aikongke.com/5313.html" title="[美国][超能查派/查皮/伙伴/超人类:卓比(港)/成人世界(台) Chappie.2015.720p.WEB-DL][动作科幻]" target="_blank">[美国][超能查派/查皮/伙伴/超人类:卓比(港)/成人世界(台) Chappie.2015.720p.WEB-DL][动作科幻]</a>
+		</h3>
+	</div>
+	<div class="line"></div>
+    <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-05-22</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;765</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5313" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>0</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+    <!-- /.Post meta -->
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-3">
+<article class="home-small-entry clr col-small">
+								<a href="http://aikongke.com/5300.html" title="[焦点 Focus 2015 BluRay iPad 1080p][喜剧/犯罪/剧情]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/20150104133334_41342.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[焦点 Focus 2015 BluRay iPad 1080p][喜剧/犯罪/剧情]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<div class="home-small-entry-text clr">
+		<h3>
+			<a href="http://aikongke.com/5300.html" title="[焦点 Focus 2015 BluRay iPad 1080p][喜剧/犯罪/剧情]" target="_blank">[焦点 Focus 2015 BluRay iPad 1080p][喜剧/犯罪/剧情]</a>
+		</h3>
+	</div>
+	<div class="line"></div>
+    <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-05-19</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;579</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5300" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+    <!-- /.Post meta -->
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-1">
+<article class="home-small-entry clr col-small">
+								<a href="http://aikongke.com/5299.html" title="[冰与火之歌:权力的游戏 Game.Of.Thrones.S05E06.1080i.HDTV][第五季第六集]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/thumb.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[冰与火之歌:权力的游戏 Game.Of.Thrones.S05E06.1080i.HDTV][第五季第六集]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<div class="home-small-entry-text clr">
+		<h3>
+			<a href="http://aikongke.com/5299.html" title="[冰与火之歌:权力的游戏 Game.Of.Thrones.S05E06.1080i.HDTV][第五季第六集]" target="_blank">[冰与火之歌:权力的游戏 Game.Of.Thrones.S05E06.1080i.HDTV][第五季第六集]</a>
+		</h3>
+	</div>
+	<div class="line"></div>
+    <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-05-19</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;1613</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5299" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>2</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+    <!-- /.Post meta -->
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-2">
+<article class="home-small-entry clr col-small">
+								<a href="http://aikongke.com/5290.html" title="机械姬/机器夏娃 Ex.Machina.2015.MULTI.DVDRip [美国][中字]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/2015051605293975.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="机械姬/机器夏娃 Ex.Machina.2015.MULTI.DVDRip [美国][中字]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<div class="home-small-entry-text clr">
+		<h3>
+			<a href="http://aikongke.com/5290.html" title="机械姬/机器夏娃 Ex.Machina.2015.MULTI.DVDRip [美国][中字]" target="_blank">机械姬/机器夏娃 Ex.Machina.2015.MULTI.DVDRip [美国][中字]</a>
+		</h3>
+	</div>
+	<div class="line"></div>
+    <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-05-17</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;741</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5290" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+    <!-- /.Post meta -->
+</article>
+</span>
+<span class="col s5 span_1_of_3 col-3">
+<article class="home-small-entry clr col-small">
+								<a href="http://aikongke.com/5289.html" title="速度与激情7/狂野时速7(港)/玩命关头7(台) Fast and Furious 7 2015 1080p HDRip [欧美][外挂中英]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/003ygxWXzy6RlbA8nDf3d690.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="速度与激情7/狂野时速7(港)/玩命关头7(台) Fast and Furious 7 2015 1080p HDRip [欧美][外挂中英]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<div class="home-small-entry-text clr">
+		<h3>
+			<a href="http://aikongke.com/5289.html" title="速度与激情7/狂野时速7(港)/玩命关头7(台) Fast and Furious 7 2015 1080p HDRip [欧美][外挂中英]" target="_blank">速度与激情7/狂野时速7(港)/玩命关头7(台) Fast and Furious 7 2015 1080p HDRip [欧美][外挂中英]</a>
+		</h3>
+	</div>
+	<div class="line"></div>
+    <!-- Post meta -->
+		<div class="postlist-meta">
+		<div class="postlist-meta-time"><i class="fa fa-calendar"></i>&nbsp;2015-05-17</div>
+		<div class="postlist-meta-views" style="float:right;"><i class="fa fa-fire"></i>&nbsp;804</div>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5289" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+    <!-- /.Post meta -->
+</article>
+</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="catlist-66 catlist clr">
+                    <div class="catlist-container clr">
+                        <h2 class="home-heading clr">
+				<span class="heading-text">
+					手机控				</span>
+                            <a href="http://aikongke.com/phone" target="_blank">+ 更多</a>
+                        </h2>
+		<span class="col-left s2">
+<article class="home-blog-entry clr">
+								<a href="http://aikongke.com/5458.html" title="音乐间谍Music Spy安卓版v1.0.1 (build 4)" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2016/03/BaiduShurufa_2016-3-30_20-51-40.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="音乐间谍Music Spy安卓版v1.0.1 (build 4)">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5458.html" title="音乐间谍Music Spy安卓版v1.0.1 (build 4)" target="_blank">音乐间谍Music Spy安卓版v1.0.1 (build 4)</a></h3>
+	<div class="postlist-meta">
+		<span class="postlist-meta-time">2016-03-30</span>
+		<span class="delim"></span>
+		<span class="postlist-meta-views">313&nbsp;℃</span>
+		<span class="delim"></span>
+		<span class="postlist-meta-comments"><i class="fa fa-comments"></i>&nbsp;<a href="http://aikongke.com/5458.html#respond">0</a></span>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5458" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>1</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+	<p>
+		音乐间谍安卓版v1.0.1是一款纯净的免费下载各类音乐的手机App，可以试听各大主流音乐网站的歌曲，观看mv并进行下载。 音乐间谍Music Spy 开始是PC端使用的神器，现在不久前（非官方爱好者）发布了安卓版，具体内容就不多阐述了，只能说你喜欢下载各种高品质音频的话，那音乐间谍绝对适合你。 v1.0.1更新说明 1.修复部分bug 2.部分ui修改 3.提升下载稳定性<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5458.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="col-right s2"><article class="clr col-small">
+								<a href="http://aikongke.com/5405.html" title="windows版iPhone4s降级工具OdysseusOTA4及教程" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/07/BaiduShurufa_2015-7-3_17-22-45.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="windows版iPhone4s降级工具OdysseusOTA4及教程">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/5405.html" title="windows版iPhone4s降级工具OdysseusOTA4及教程" target="_blank">windows版iPhone4s降级工具OdysseusOTA4及教程</a></h3>
+	<p>
+		对于没有Mac的用户来说，只能通过虚拟机来进行降级，昨天，开发者送上了Win版iOS6.1.3降级工具，让那些没有Mac系统或不愿意安装虚拟机的用户找到了更简单的降价方法。 该工具名称为odysseusOTA，现在给大家一个最简单的教程，工具在文末附下载。 　 一、准备工作： 1、下载工具包odysseusOTA4WIN.rar，解压在任意位置，然后打开未命名文件夹3，将此文件夹下的fistmedaddy.ipsw复制到idevicerestore for Windows文件夹内，并将idevi<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5405.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/5213.html" title="PhoneClean 3.6.2官网破解版  清理iphone中垃圾文件" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/ip1234-2.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="PhoneClean 3.6.2官网破解版  清理iphone中垃圾文件">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5213.html" title="PhoneClean 3.6.2官网破解版  清理iphone中垃圾文件" target="_blank">PhoneClean 3.6.2官网破解版  清理iphone中垃圾文件</a></h3>
+	<p>
+		PhoneClean是一个windows下的免费软件，作者制作这个软件主要是用来清理iphone中软件产生的垃圾文件和缓存文件，从而可以腾出更多的空间供你使用。如果你发现自己的iphone的存储容量变得越来越小的话，赶快使用PhoneClean吧。 &nbsp; PhoneClean的体积为4M，带有中文界面，兼容Windows XP/Vista/7/8。 这个软件安装和使用的条件是：电脑上需要有.NET Framework 3.5和iTunes。前者没装的话，PhoneClean安装过程中会提<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5213.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/5180.html" title="【安卓】硬件信息识别 AIDA64 v1.11去广告汉化版" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/04/BaiduShurufa_2015-4-28_11-3-51.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="【安卓】硬件信息识别 AIDA64 v1.11去广告汉化版">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5180.html" title="【安卓】硬件信息识别 AIDA64 v1.11去广告汉化版" target="_blank">【安卓】硬件信息识别 AIDA64 v1.11去广告汉化版</a></h3>
+	<p>
+		AIDA64安卓版 - 硬件检测利器，最权威的电脑硬件监测、监控与测试软件！界面专业范十足，安卓5.0最新的Material Design设计风格！ pc端很知名的的软件，安卓端依旧功能强劲。 硬件信息识别 AIDA64 v1.11去广告汉化版显示的信息量很大，很多数据都是动态变化的，非常准确，CPU、显示 和GPU的详细信息，连CPU缓存、GPU ALU这样的信息都能读取，非常专业，网络信息和电池信息，注意电池信息 可以mA为单位显示当前充电的速率，安卓系统信息和设备信息，可以辨认出最新的安卓<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5180.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/4906.html" title="安卓 三姑六婆-亲戚称呼计算器" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/03/aikongke.com_1.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="安卓 三姑六婆-亲戚称呼计算器">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/4906.html" title="安卓 三姑六婆-亲戚称呼计算器" target="_blank">安卓 三姑六婆-亲戚称呼计算器</a></h3>
+	<p>
+		今年过年有没有被需要父母提示才能叫出称呼的三姑六婆拉住询问学习怎样？有女朋友了么？结婚了么？有孩子了么？孩子上学了么….么…然后你有机智的回答么？ 三姑六婆 能先帮你搞定对方怎么称呼，比如 父亲 的 母亲 的 丈夫 的 妻子 的 儿子（比父亲年长），应该叫做 伯父。 这里的 的 就是连词了，用它连起来，称呼迎刃而解。 只要知道对方和你的具体关系是怎样的，就能得到相对正确的称呼，为嘛是相对？因为中国地域辽阔，南北方差异巨大，你那里正确的别的地方不一定这样称呼，而且三姑六婆是台湾同学的作品。 拜年時<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/4906.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/4554.html" title="SD Maid Pro v3.0.4.1 RC2 专业破解版 SD女佣" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2014/09/0dd7912397dda144d183b4aab1b7d0a20cf48624.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="SD Maid Pro v3.0.4.1 RC2 专业破解版 SD女佣">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/4554.html" title="SD Maid Pro v3.0.4.1 RC2 专业破解版 SD女佣" target="_blank">SD Maid Pro v3.0.4.1 RC2 专业破解版 SD女佣</a></h3>
+	<p>
+		手机垃圾清理利器—SD Maid（SD女佣）发布v3.0.4.1 RC2版本。手机使用时间一长，各种缓存数据和卸载软件所遗留的垃圾文件越积越多，如果不及时清理，不仅占用储存空间，也拖慢了手机的运行速度。不过SD卡上面的文件可不是刷机这么简单就能清除掉得，而且杀鸡焉用牛刀，这时候就该轮到SD卡清除工具大显身手了！ 很久前用过，当时感觉很棒，不知道现在有木有进步。 特别版由@infinity破解，无需幸运补丁直装即为专业版。SD Maid（SD女佣）是款非常强大的专业储存卡垃圾文件清理工具，可以让S<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/4554.html">read more/更多</a>	</p>
+</article>
+</span>
+                    </div>
+                </section>
+                <section class="catlist-67 catlist clr">
+                    <div class="catlist-container clr">
+                        <h2 class="home-heading clr">
+				<span class="heading-text">
+					游戏控				</span>
+                            <a href="http://aikongke.com/game" target="_blank">+ 更多</a>
+                        </h2>
+		<span class="col-left s2">
+<article class="home-blog-entry clr">
+								<a href="http://aikongke.com/5333.html" title="[无主之地2 Borderlands 2][GBT小组简繁中英文全46DLC年度硬盘版]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/fdeb4f4a26d5bfce1f5ae0d94a536444-750x450.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[无主之地2 Borderlands 2][GBT小组简繁中英文全46DLC年度硬盘版]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5333.html" title="[无主之地2 Borderlands 2][GBT小组简繁中英文全46DLC年度硬盘版]" target="_blank">[无主之地2 Borderlands 2][GBT小组简繁中英文全46DLC年度硬盘版]</a></h3>
+	<div class="postlist-meta">
+		<span class="postlist-meta-time">2015-06-14</span>
+		<span class="delim"></span>
+		<span class="postlist-meta-views">887&nbsp;℃</span>
+		<span class="delim"></span>
+		<span class="postlist-meta-comments"><i class="fa fa-comments"></i>&nbsp;<a href="http://aikongke.com/5333.html#respond">0</a></span>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5333" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>0</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+	<p>
+		[PC][无主之地2][Borderlands 2][射击游戏][Gearbox Software][硬盘版][GBT小组简繁中英文全46DLC年度版][简体中文/繁体中文/英文] 中文名称：无主之地2 英文名称：Borderlands&nbsp;2 游戏制作：Gearbox&nbsp;Software 游戏发行：2K&nbsp;Games 游戏语言：简/繁/英 游戏容量：9.08G 游戏平台：PC 游戏类型：FPS(第一人称射击类游戏) 官方网站：http://www.borderlands2.com 发布时间：2015.<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5333.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="col-right s2"><article class="clr col-small">
+								<a href="http://aikongke.com/5292.html" title="[单机SLG][Besiege 围攻][3DM免安装修正破解版v0.08]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/uploads/2015/05/d727722dd42a2834376b3c6b5fb5c9ea14cebf7b.gif?imageView2/1/w/375/h/250/q/100" alt="[单机SLG][Besiege 围攻][3DM免安装修正破解版v0.08]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/5292.html" title="[单机SLG][Besiege 围攻][3DM免安装修正破解版v0.08]" target="_blank">[单机SLG][Besiege 围攻][3DM免安装修正破解版v0.08]</a></h3>
+	<p>
+		英文名称：Besiege 中文名称：围攻 游戏类型：策略类(SLG)游戏 制作厂商：Spiderling 发行厂商：Spiderling 游戏语种：EN 发售日期：2015年 官方网站：http://www.besiege.spiderlinggames.co.uk/ 灰常有意思的一款游戏，给脑洞大的你…… 【游戏简介】 《Besiege》是steam青睐之光中的独立游戏作品之一，虽然是战争攻城题材，但是画面十分清新，不少玩家都是被画面所吸引。游戏在玩法上也十分“简单”，需要大家自定义攻城战车来<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5292.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/5172.html" title="[单机游戏][RPG][轩辕剑外传：云之遥免激活破解版][大宇]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/04/132802o22otb3283sw32ol.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[单机游戏][RPG][轩辕剑外传：云之遥免激活破解版][大宇]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5172.html" title="[单机游戏][RPG][轩辕剑外传：云之遥免激活破解版][大宇]" target="_blank">[单机游戏][RPG][轩辕剑外传：云之遥免激活破解版][大宇]</a></h3>
+	<p>
+		&nbsp;[单机游戏][RPG][轩辕剑外传：云之遥免激活破解数字版 Faraway Of Clouds][大宇][EXE][CN][猪猪游戏] 自测可用，此版本无需激活、无需全程联网，不过有切出桌面会停止工作的小毛病，请注意。 游戏名称：轩辕剑外传：云之遥 英文名称：XuanYuan Sword:The Clouds Faraway(SwdCF) 游戏类型：角色扮演类(RPG)游戏 游戏制作：大宇资讯股份有限公司(DOMO小组) 游戏发行：寰宇之星 游戏版本：BTpigGames_wyf_SwdCF <a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5172.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/5120.html" title="[单机][ACT][Assassin’s Creed Chronicles: China 刺客信条编年史：中国][Climax Studios][CODEX破解版]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/04/070619pv7w4xz2qhhxhb8g.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[单机][ACT][Assassin’s Creed Chronicles: China 刺客信条编年史：中国][Climax Studios][CODEX破解版]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5120.html" title="[单机][ACT][Assassin’s Creed Chronicles: China 刺客信条编年史：中国][Climax Studios][CODEX破解版]" target="_blank">[单机][ACT][Assassin’s Creed Chronicles: China 刺客信条编年史：中国][Climax Studios][CODEX破解版]</a></h3>
+	<p>
+		[单机游戏] [ACT][Assassin’s Creed Chronicles: China][刺客信条编年史：中国][Climax Studios][ISO][TW/EN][CODEX破解版] 很多人运行会停止工作，网上搜了下净是废话，自己写下，造福网民：刺客信条编年史：中国停止工作解决方案 游戏名称：刺客信条编年史：中国 英文名称：Assassin’s Creed Chronicles: China 游戏类型：动作冒险类(ACT)游戏 游戏制作：Climax Studios 游戏发行：Ub<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5120.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/4049.html" title="[Android RPG][Angry Birds Epic 愤怒的小鸟英雄传][Rovio][CN][V1.0.8]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/05/860876.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[Android RPG][Angry Birds Epic 愤怒的小鸟英雄传][Rovio][CN][V1.0.8]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/4049.html" title="[Android RPG][Angry Birds Epic 愤怒的小鸟英雄传][Rovio][CN][V1.0.8]" target="_blank">[Android RPG][Angry Birds Epic 愤怒的小鸟英雄传][Rovio][CN][V1.0.8]</a></h3>
+	<p>
+		下载ZIP文件,然后并解压.先安装主文件APK,然后将Android文件夹,直接放在内存卡根目录中 Angry Birds Epic 愤怒的小鸟英雄传 Rovio CN V1.0.8 英文名称：Angry Birds Epic&nbsp;&nbsp;中文名称：愤怒的小鸟英雄传游戏类型：RPG角色扮演制作厂商：Rovio发行厂商：Rovio游戏语种：CN中文发售日期：2014-03-18【游戏简介】《愤怒的小鸟英雄传 Angry Birds Epic》准备好经历一次鸟儿风格的免费角色扮演大冒险；本次冒险充满各种“武器<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/4049.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/4045.html" title="[单机RTS][Rise of Nations: Extended Edition 国家的崛起：扩展版][FLT破解版]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2014/06/103133riw1aaw1apw4ggoe.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[单机RTS][Rise of Nations: Extended Edition 国家的崛起：扩展版][FLT破解版]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/4045.html" title="[单机RTS][Rise of Nations: Extended Edition 国家的崛起：扩展版][FLT破解版]" target="_blank">[单机RTS][Rise of Nations: Extended Edition 国家的崛起：扩展版][FLT破解版]</a></h3>
+	<p>
+		Rise of Nations: Extended Edition 国家的崛起：扩展版 FLT破解版 游戏名称：国家的崛起：扩展版英文名称：Rise of Nations: Extended Edition游戏类型：即时战略类(RTS)游戏游戏制作：SkyBox Labs/Big Huge Games&nbsp;游戏发行：Microsoft Studios&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;游戏平台：PC发售时间：2014年6月13日官方网站：http://www.riseofnations.com/ 游戏介绍 &nbsp; &nbsp;&nbsp; &nbsp;<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/4045.html">read more/更多</a>	</p>
+</article>
+</span>
+                    </div>
+                </section>
+                <section class="catlist-65 catlist clr">
+                    <div class="catlist-container clr">
+                        <h2 class="home-heading clr">
+				<span class="heading-text">
+					美化控				</span>
+                            <a href="http://aikongke.com/beautify" target="_blank">+ 更多</a>
+                        </h2>
+		<span class="col-left s2">
+<article class="home-blog-entry clr">
+								<a href="http://aikongke.com/5384.html" title="高级磨皮美化软件 PT Portrait 3.0 汉化破解版 极为强大" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/06/BaiduShurufa_2015-6-29_13-32-45-750x500.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="高级磨皮美化软件 PT Portrait 3.0 汉化破解版 极为强大">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/5384.html" title="高级磨皮美化软件 PT Portrait 3.0 汉化破解版 极为强大" target="_blank">高级磨皮美化软件 PT Portrait 3.0 汉化破解版 极为强大</a></h3>
+	<div class="postlist-meta">
+		<span class="postlist-meta-time">2015-06-29</span>
+		<span class="delim"></span>
+		<span class="postlist-meta-views">2675&nbsp;℃</span>
+		<span class="delim"></span>
+		<span class="postlist-meta-comments"><i class="fa fa-comments"></i>&nbsp;<a href="http://aikongke.com/5384.html#comments">5</a></span>
+			<div class="postlist-meta-like like-btn" style="float:right;" pid="5384" title="点击喜欢"><i class="fa fa-heart"></i>&nbsp;<span>0</span>&nbsp;</div>
+			<div class="postlist-meta-collect collect collect-no" style="float:right;cursor:default;" title="必须登录才能收藏"><i class="fa fa-star"></i>&nbsp;<span>0</span>&nbsp;</div>
+		</div>
+	<p>
+		自动磨皮软件 PT Portrait 3.0 汉化破解版是一款专注于人像照片后制的修图软件。 - 即使您不会photoshop, 也能轻松整修出拥有专业水准的人像摄影作品。 - 如果您已经拥有可以使用photoshop的照片处理程式，那么人像修图助手可以帮助您大幅提升人像照片编修效率。 试用下就惊呆了，定制项灰常多，修正很自然，圆脸小眼睛满脸坎坷的你有救了…… 美美哒人之常情，别过分欺骗就好，另破解文件会被部分杀软拦截，我试用了没问题…… 使用说明： 本破解程序为PT Portrait Stud<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5384.html">read more/更多</a>	</p>
+</article>
+</span>
+<span class="col-right s2"><article class="clr col-small">
+								<a href="http://aikongke.com/5124.html" title="[Photoshop][李涛皮肤精修教程-广告级别的修饰][MP4]" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/04/BaiduShurufa_2015-4-23_14-55-32.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="[Photoshop][李涛皮肤精修教程-广告级别的修饰][MP4]">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/5124.html" title="[Photoshop][李涛皮肤精修教程-广告级别的修饰][MP4]" target="_blank">[Photoshop][李涛皮肤精修教程-广告级别的修饰][MP4]</a></h3>
+	<p>
+		资料名称：李涛皮肤精修教程-广告级别的修饰 介绍： 本套视频是MP4格式，尺寸为1280*720，画面清晰。特别说明：此教程演示了三种不同的精修方法，分别是当前比较流行的人物高级修饰办法，比如明度，柔光灰，双曲线，并且对比了各自的特点，对于学期皮肤精修的人有很大的帮助。 很清楚，很实用，见效果图： 目录： 1基本修饰.mp4 2明度修饰法.mp4 3柔光灰修饰法.mp4 4双曲线修饰法.mp4 5整体修饰.mp4 &nbsp; 下载地址： 百度网盘：h89h 360云盘：ae96<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/5124.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/4927.html" title="Topaz Glow v1.0.1 注册版 光效果滤镜 超多光线效果" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2015/03/aikongke.com_19h00m10s.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Topaz Glow v1.0.1 注册版 光效果滤镜 超多光线效果">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/4927.html" title="Topaz Glow v1.0.1 注册版 光效果滤镜 超多光线效果" target="_blank">Topaz Glow v1.0.1 注册版 光效果滤镜 超多光线效果</a></h3>
+	<p>
+		Topaz Glow 注册版是一款能够给照片添加发光效果的PS滤镜，也可以脱离PS独立运行的！使用方便，功能强大，除了发光效果还有其他预设的多种效果。 试用了下，感觉还是挺强大的，效果灰常多，没中文，不过也好理解。 简单，方便，时尚的照片编辑应用程序，使您能够发光效果添加到您的照片在几秒钟内 Topaz Glow是一个简单的OS X应用程序，使您可以添加一个发光的形象面貌创造一个发光的效果，并提供观众运动和流的强大轰动。 此外，Topaz Glow功能简单和组织良好的用户界面，因此，所有你需要做<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/4927.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/4082.html" title="Color Cube 优秀配色取色工具  Win/Mac" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2014/06/BaiduShurufa_2014-6-19_20-59-26.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Color Cube 优秀配色取色工具  Win/Mac">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/4082.html" title="Color Cube 优秀配色取色工具  Win/Mac" target="_blank">Color Cube 优秀配色取色工具  Win/Mac</a></h3>
+	<p>
+		Color Cube功能有待加强，没有放大细节功能，从界面看得出很用心。 相比于普通的取色配色工具，Color Cube&nbsp;特别之处在于： 色彩分析：将任意图像文件拖入软件界面并点按“分析”按钮即可按照&nbsp;蜂巢图、色板、色彩索引&nbsp;三种样式向用户展示图像中的主要配色; 色板导出：直接将分析统计结果导出至 PS 色板或图像文件，也可调节精度获得最佳分析; 屏幕取色：方式很特别。开启屏幕取色功能后将鼠标箭头停留在一个位置些许时间后，Color Cube 会非常优雅地自动弹出 16 进制颜色数值，再点击一下<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/4082.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/3905.html" title="Marine Aquarium 3.3.6041 serial 汉化版 经典超酷海洋馆屏保" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2014/05/serenescreen-marine-aquarium-11.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Marine Aquarium 3.3.6041 serial 汉化版 经典超酷海洋馆屏保">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+	<h3><a href="http://aikongke.com/3905.html" title="Marine Aquarium 3.3.6041 serial 汉化版 经典超酷海洋馆屏保" target="_blank">Marine Aquarium 3.3.6041 serial 汉化版 经典超酷海洋馆屏保</a></h3>
+	<p>
+		Marine Aquarium 3.3 汉化版是款经典的屏幕保护程序，我想大家一定会钟爱这款著名的热带鱼水族箱屏幕保护程序 Marine Aquarium 3.3汉化版。 Marine Aquarium 3.3&nbsp;中文版可是受到微软推荐的水族箱屏保,现在这个屏幕保护程序已被收录进了微软的 WinXP Plus Pack 当中。最新版本不仅修复了先前版本中存在的一些不足，而且又增加了新品种鱼类，已经达到 30 种使这个水族箱更加热闹了。 效果看了下的确挺不错的，想换个屏保风格的可以试试，夏天得清凉的<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/3905.html">read more/更多</a>	</p>
+</article>
+<article class="clr col-small">
+								<a href="http://aikongke.com/3077.html" title="Converseen 0.6.8  所有格式的免费图片批量转换器" class="fancyimg home-blog-entry-thumb">
+					<div class="thumb-img">
+						<img class="" src="http://aikongke.com/wp-content/themes/tinection/functions/timthumb.php?src=http://aikongke.com/wp-content/uploads/2014/03/converseenlogo.jpg&amp;q=60&amp;w=375&amp;h=250&amp;zc=1" alt="Converseen 0.6.8  所有格式的免费图片批量转换器">
+			<span><i class="fa fa-expand"></i></span>
+						</div>
+		</a>
+		<h3><a href="http://aikongke.com/3077.html" title="Converseen 0.6.8  所有格式的免费图片批量转换器" target="_blank">Converseen 0.6.8  所有格式的免费图片批量转换器</a></h3>
+	<p>
+		Converseen是一个免费的批量图片转换器，使用它可以在超多图片格式之间互相转换（不管是流行的jpg还是罕见的tiff，甚至还能够转换成pdf！）。转换之前还可以调整图片尺寸，设置图片质量以控制转换后的文件体积。并且这个软件还是跨平台的，在windows、mac和linux下都可以使用它都，对于经常接触图片的人来说是非常好的工具。 Converseen的体积有10MB左右，只所以会这么大，是因为包含了许多的解码器，这样才可以支持操作的图片格式，在添加图片窗口中，你可以看到它所支持的图片格式，<a rel="nofollow" class="more-link" style="text-decoration:none;" href="http://aikongke.com/3077.html">read more/更多</a>	</p>
+</article>
+</span>
+                    </div>
+                </section>
+                <!-- pagination -->
+                <div class="clear">
+                </div>
+                <div class="pagination">
+                </div>
+                <!-- /.pagination -->
+            </div>
+            <script type="text/javascript">
+                $('.site_loading').animate({'width':'55%'},50);  //第二个节点
+            </script>
+            <div id="sidebar" class="clr">
+                <div id="tinposts-2" class="widget widget_tin_posts">
+                    <h3><span class="widget-title">发现精彩</span></h3>
+
+                    <ul class="tin-posts group ">
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5419.html" rel="bookmark" title="Glary Utilities Pro 5.31.0.51 绿色注册专业版 系统维护工具">Glary Utilities Pro 5.31.0.51 绿色注册专业版 系统维护工具</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5439.html" rel="bookmark" title="屏幕亮度调节小工具 几十K如音量般使用">屏幕亮度调节小工具 几十K如音量般使用</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5488.html" rel="bookmark" title="[Android] 百度云 7.12.0 去广告不限速精简版">[Android] 百度云 7.12.0 去广告不限速精简版</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5448.html" rel="bookmark" title="【正版限免】Bigasoft Video Downloader Pro 在线流视频下载转换工具">【正版限免】Bigasoft Video Downloader Pro 在线流视频下载转换工具</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5483.html" rel="bookmark" title="Bandicam 3.0.4.1035 注册便携版 最佳视频录像软件">Bandicam 3.0.4.1035 注册便携版 最佳视频录像软件</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5459.html" rel="bookmark" title="Ditto V3.21.50.0汉化便携版  剪贴板增强工具">Ditto V3.21.50.0汉化便携版  剪贴板增强工具</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5458.html" rel="bookmark" title="音乐间谍Music Spy安卓版v1.0.1 (build 4)">音乐间谍Music Spy安卓版v1.0.1 (build 4)</a>
+                            </div>
+
+                        </li>
+
+                        <li class="list-single-col">
+                            <div class="tin-posts-title">
+                                <a href="http://aikongke.com/5441.html" rel="bookmark" title="XMedia Recode 3.3.0.6 Portable中文便携版 视频格式装换工具">XMedia Recode 3.3.0.6 Portable中文便携版 视频格式装换工具</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div id="tincreditsrank-2" class="widget widget_tincreditsrank">        <h3><span class="widget-title">积分排行</span></h3>		<div class="tincreditsrank"><ul><li class="tincreditsrank-list"><span class="rank-avatar"><img src="http://aikongke.com/wp-content/uploads/avatars/avatar-1.jpeg" class="avatar" width="40" height="40"></span><span class="creditsrank-name"><a href="http://aikongke.com/author/18810387956" target="_blank" title="炫酷管理员">炫酷管理员</a></span><span class="creditsrank-ranking">68965 积分</span></li><li class="tincreditsrank-list"><span class="rank-avatar"><img src="http://aikongke.com/wp-content/themes/tinection/images/gravatar.png" class="avatar" width="40" height="40"></span><span class="creditsrank-name"><a href="http://aikongke.com/author/lukefoos15" target="_blank" title="LukeFoos15">LukeFoos15</a></span><span class="creditsrank-ranking">100 积分</span></li><li class="tincreditsrank-list"><span class="rank-avatar"><img src="http://aikongke.com/wp-content/themes/tinection/images/gravatar.png" class="avatar" width="40" height="40"></span><span class="creditsrank-name"><a href="http://aikongke.com/author/thanhzamora87" target="_blank" title="ThanhZamora87">ThanhZamora87</a></span><span class="creditsrank-ranking">100 积分</span></li><li class="tincreditsrank-list"><span class="rank-avatar"><img src="http://aikongke.com/wp-content/themes/tinection/images/gravatar.png" class="avatar" width="40" height="40"></span><span class="creditsrank-name"><a href="http://aikongke.com/author/katherinahampden" target="_blank" title="KatherinaHampden">KatherinaHampden</a></span><span class="creditsrank-ranking">100 积分</span></li><li class="tincreditsrank-list"><span class="rank-avatar"><img src="http://aikongke.com/wp-content/themes/tinection/images/gravatar.png" class="avatar" width="40" height="40"></span><span class="creditsrank-name"><a href="http://aikongke.com/author/earlenecontreras" target="_blank" title="EarleneContreras">EarleneContreras</a></span><span class="creditsrank-ranking">100 积分</span></li></ul></div>		</div>
+                <div id="recent-comments-3" class="widget widget_recent_comments"><h3><span class="widget-title">近期评论</span></h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Ci调</span>发表在《<a href="http://aikongke.com/3037.html#comment-1908">专业乐谱制作工具 Avid Sibelius v7.5 破解版</a>》</li><li class="recentcomments"><span class="comment-author-link">消逝丿年华</span>发表在《<a href="http://aikongke.com/3768.html#comment-1907">Adobe CS6 Master Collection（Adobe大师套装）简体中文最终收藏版</a>》</li><li class="recentcomments"><span class="comment-author-link">阿萨德</span>发表在《<a href="http://aikongke.com/1983.html#comment-1906">享受视听盛宴 高清视频播放器ArcSoft TotalMedia Theatre 6（附注册机）</a>》</li><li class="recentcomments"><span class="comment-author-link">kempmm</span>发表在《<a href="http://aikongke.com/5396.html#comment-1905">Adobe CC Family (CC 2015) 大师破解版v5.1 Adobe全系列赢政整合版</a>》</li><li class="recentcomments"><span class="comment-author-link">啦啦啦</span>发表在《<a href="http://aikongke.com/3754.html#comment-1904">Adobe Acrobat XI Pro 11  简体中文破解有序列号可更新 86/64</a>》</li><li class="recentcomments"><span class="comment-author-link">好人</span>发表在《<a href="http://aikongke.com/5384.html#comment-1903">高级磨皮美化软件 PT Portrait 3.0 汉化破解版 极为强大</a>》</li><li class="recentcomments"><span class="comment-author-link">nono</span>发表在《<a href="http://aikongke.com/4398.html#comment-1902">Chrome37.0.2062.35 集成 GoAgent 翻墙绿色版   你们懂的</a>》</li><li class="recentcomments"><span class="comment-author-link">阿萨德</span>发表在《<a href="http://aikongke.com/3754.html#comment-1901">Adobe Acrobat XI Pro 11  简体中文破解有序列号可更新 86/64</a>》</li></ul></div>		<div id="tinfloatwidget-2" class="widget floatwidget">					<div id="tindonate-2" class="widget_tindonate">        		<div class="donate"><img src="http://aikongke.com/wp-content/uploads/2016/03/aikongke18810387956.png" title="赞助站长" alt="赞助站长"><form id="alipay-gather" style="display:inline-block;" action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK"><input name="optEmail" type="hidden" value="li645944229@163.com"><input name="payAmount" type="hidden" value="1"><input id="title" name="title" type="hidden" value="支持一下"><input name="memo" type="hidden" value=""><input name="pay" type="image" value="转帐" src="https://img.alipay.com/sys/personalprod/style/mc/btn-index.png"></form></div>
+            </div>
+            </div>
+                <div class="floatwidget-container"></div>
+            </div>
+            <script type="text/javascript">
+                $('.site_loading').animate({'width':'78%'},50);  //第三个节点
+            </script></div>
+
+    </div>
 </header>
 
 </body>
